@@ -1,4 +1,4 @@
-const https = require('https');
+﻿const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
@@ -58,3 +58,4 @@ async function run() {
   console.log('All downloads finished.');
 }
 run();
+

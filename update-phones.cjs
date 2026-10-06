@@ -37,3 +37,4 @@ for (const file of allAstroFiles) {
     }
 }
 console.log('Done replacing old phone numbers.');
+

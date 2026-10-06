@@ -13,3 +13,4 @@ content2 = content2.replace(/777 Commercial Blvd, Los Angeles, CA 90015/g, '1180
 fs.writeFileSync(file2, content2, 'utf8');
 
 console.log('Updated GoogleMap and thank-you');
+

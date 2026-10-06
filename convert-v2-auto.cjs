@@ -2,7 +2,7 @@
 const path = require('path');
 
 const demoDir = 'c:/Users/Diego/Downloads/Agente Ayrton/Agente Roofinity/demo 2';
-const destDir = 'c:/Users/Diego/Downloads/Agente Ayrton/Agente Roofinity/src/pages/v2';
+const destDir = 'c:/Users/Diego/Downloads/Agente Ayrton/Agente Roofinity v2/src/pages';
 
 const files = fs.readdirSync(demoDir).filter(f => f.endsWith('.html'));
 
@@ -18,15 +18,17 @@ files.forEach(src => {
     let srcPath = path.join(demoDir, src);
     let content = fs.readFileSync(srcPath, 'utf8');
     
-    content = content.replace(/\.\/[^"]*?_files\//g, '/v2/css/');
-    content = content.replace(/\/v2\/css\/(.*?\.(js|js\.descargar))/g, '/v2/js/$1');
+    content = content.replace(/\.\/[^"]*?_files\//g, '/assets/');
     content = content.replace(/\.js\.descargar/g, '.js');
-    content = content.replace(/\/v2\/css\/(.*?\.(jpg|png|svg|gif))/g, '/v2/images/$1');
     
-    // Convert generic image tags to use V1 images where possible
-    // (I will do this carefully via another script or manually in the Astro files to match perfectly)
+    // Extract only the body content
+    let start = content.indexOf('<div class="main-wrapper">');
+    let end = content.indexOf('</body>');
+    if (start !== -1 && end !== -1) {
+        content = content.substring(start, end);
+    }
     
-    let astroContent = "---\n// Version 2 Page\n---\n" + content;
+    let astroContent = "---\nimport Layout from '../layouts/Layout.astro';\n---\n<Layout>\n" + content + "\n</Layout>";
     fs.writeFileSync(path.join(destDir, dest), astroContent, 'utf8');
 });
 

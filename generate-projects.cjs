@@ -153,3 +153,4 @@ projects.forEach(p => {
     fs.writeFileSync(path.join('c:/Users/Diego/Downloads/Agente Ayrton/Agente Roofinity/src/pages/projects', p.filename), newContent, 'utf8');
 });
 console.log('8 Project Pages Generated Successfully.');
+

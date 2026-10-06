@@ -2,7 +2,7 @@
 const path = require('path');
 
 const demoDir = 'c:/Users/Diego/Downloads/Agente Ayrton/Agente Roofinity/demo 2';
-const destDir = 'c:/Users/Diego/Downloads/Agente Ayrton/Agente Roofinity/src/pages/v2';
+const destDir = 'c:/Users/Diego/Downloads/Agente Ayrton/Agente Roofinity v2/src/pages';
 
 const files = [
     { src: 'Metary - Industry & Factory HTML Template _ Power & Automation Technologies.html', dest: 'index.astro' },
@@ -35,3 +35,4 @@ files.forEach(f => {
 });
 
 console.log('Astro files created successfully.');
+

@@ -1,7 +1,7 @@
 ﻿const fs = require('fs');
 const path = require('path');
 
-const destDir = 'c:/Users/Diego/Downloads/Agente Ayrton/Agente Roofinity/src/pages/v2';
+const destDir = 'c:/Users/Diego/Downloads/Agente Ayrton/Agente Roofinity v2/src/pages';
 const imgDir = 'c:/Users/Diego/Downloads/Agente Ayrton/Agente Roofinity/public/v2/images';
 const files = fs.readdirSync(destDir).filter(f => f.endsWith('.astro'));
 
@@ -25,3 +25,4 @@ files.forEach(file => {
 
 console.log('Missing images:');
 missing.forEach(m => console.log(m));
+

@@ -1,4 +1,4 @@
-﻿/* =========================================================
+/* =========================================================
    MOBILE COMPACT SPACING (max-width: 767px ONLY)
    Reduces the theme's large section paddings/margins on phones.
    Desktop is untouched.
@@ -106,12 +106,64 @@
   
   .about-ecoreal, 
   .ecoreal-features, 
-  .who-we-are, 
   .project-section, 
   .contact-page-details, 
   .contact-form {
     padding-top: 40px !important;
     padding-bottom: 40px !important;
+  }
+
+  /* --- Who We Are / Approach Section (About Us Mobile Compact) --- */
+  .who-we-are {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+  .who-we-are .row {
+    display: block !important;
+  }
+  .who-we-are .col-md-6,
+  .who-we-are .padding-fix {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 20px 20px 10px 20px !important;
+  }
+  .who-we-are-content {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+  .who-we-are-content > h2 {
+    font-size: 26px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 12px !important;
+    margin-top: 5px !important;
+  }
+  .who-we-are-content > h2::after {
+    margin-bottom: 10px !important;
+  }
+  .who-we-are-content > p {
+    font-size: 14.5px !important;
+    line-height: 1.6 !important;
+    margin-top: 15px !important;
+    margin-bottom: 18px !important;
+  }
+  .who-we-are-content h4 {
+    font-size: 16px !important;
+    margin-bottom: 4px !important;
+  }
+  .who-we-are-content h4 + p {
+    font-size: 13.5px !important;
+    margin-bottom: 0 !important;
+  }
+  .who-we-are-content > div {
+    margin-bottom: 16px !important;
+  }
+  .who-we-are .col-md-6[style*="background-image"],
+  .who-we-are-img-col {
+    height: 220px !important;
+    min-height: 220px !important;
+    margin-top: 15px !important;
+    padding: 0 !important;
   }
   
   /* Less top padding if it's right under the banner to prevent double gaps */

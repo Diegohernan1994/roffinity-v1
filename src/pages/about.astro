@@ -1,4 +1,4 @@
-﻿---
+---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Navbar from '../components/Navbar.astro';
@@ -48,7 +48,7 @@ import LeadSection from '../components/LeadSection.astro';
       <div class="container-fluid padding-fix">
           <div class="row" style="display: flex; flex-wrap: wrap;">
               <!-- Text Content -->
-              <div class="col-md-6 padding-fix" style="display: flex; align-items: center; justify-content: center; padding: 60px 40px;">
+              <div class="col-md-6 padding-fix who-we-are-text-col" style="display: flex; align-items: center; justify-content: center; padding: 60px 40px;">
                   <div class="who-we-are-content" style="max-width: 600px;">
                       <span style="color: var(--rf-primary-green); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 10px;">Our Approach</span>
                       <h2 style="font-weight: 800; font-size: 36px; margin-bottom: 20px; color: var(--rf-primary-charcoal);">Good decisions.<br>Thoughtful details.</h2>
@@ -69,7 +69,7 @@ import LeadSection from '../components/LeadSection.astro';
                   </div>
               </div>
               <!-- Image Background -->
-              <div class="col-md-6 padding-fix" style="min-height: 400px; background-image: url('/images/services/res-roof-replacement.jpg'); background-size: cover; background-position: center;">
+              <div class="col-md-6 padding-fix who-we-are-img-col" style="min-height: 400px; background-image: url('/images/services/res-roof-replacement.jpg'); background-size: cover; background-position: center;">
               </div>
           </div>
       </div>
@@ -173,6 +173,76 @@ import LeadSection from '../components/LeadSection.astro';
 
   <Footer />
   <AppointmentModal />
+
+  <style>
+    @media (max-width: 991px) {
+      .who-we-are {
+        padding: 25px 0 !important;
+      }
+      .who-we-are .row {
+        display: block !important;
+      }
+      .who-we-are .col-md-6,
+      .who-we-are-text-col {
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 25px 20px 20px 20px !important;
+      }
+      .who-we-are-content {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        text-align: center !important;
+      }
+      .who-we-are-content h2 {
+        font-size: 26px !important;
+        line-height: 1.25 !important;
+        margin-bottom: 12px !important;
+        margin-top: 5px !important;
+      }
+      .who-we-are-content p {
+        font-size: 14.5px !important;
+        line-height: 1.6 !important;
+        margin-bottom: 16px !important;
+      }
+      .who-we-are-content h4 {
+        font-size: 16px !important;
+        margin-bottom: 4px !important;
+      }
+      .who-we-are-content h4 + p {
+        font-size: 13.5px !important;
+        margin-bottom: 0 !important;
+      }
+      .who-we-are-content > div {
+        margin-bottom: 14px !important;
+      }
+      .who-we-are-content .btn {
+        padding: 10px 26px !important;
+        font-size: 13px !important;
+      }
+      .who-we-are-img-col {
+        height: 220px !important;
+        min-height: 220px !important;
+        margin-top: 15px !important;
+        padding: 0 !important;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .who-we-are {
+        padding: 20px 0 !important;
+      }
+      .who-we-are-text-col {
+        padding: 15px 15px 15px 15px !important;
+      }
+      .who-we-are-content h2 {
+        font-size: 24px !important;
+      }
+      .who-we-are-img-col {
+        height: 200px !important;
+        min-height: 200px !important;
+      }
+    }
+  </style>
 </Layout>
 
 

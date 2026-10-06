@@ -23,3 +23,4 @@ updates.forEach(u => {
 
 fs.writeFileSync(file, content, 'utf8');
 console.log('PhotoGallery updated.');
+

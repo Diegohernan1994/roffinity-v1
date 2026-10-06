@@ -1,7 +1,7 @@
 ﻿const fs = require('fs');
 const path = require('path');
 
-const destDir = 'c:/Users/Diego/Downloads/Agente Ayrton/Agente Roofinity/src/pages/v2';
+const destDir = 'c:/Users/Diego/Downloads/Agente Ayrton/Agente Roofinity v2/src/pages';
 const files = fs.readdirSync(destDir).filter(f => f.endsWith('.astro'));
 
 files.forEach(file => {
@@ -24,3 +24,4 @@ files.forEach(file => {
 });
 
 console.log('Metary specific info injected.');
+
