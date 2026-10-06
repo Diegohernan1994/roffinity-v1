@@ -121,8 +121,7 @@
   .who-we-are .row {
     display: block !important;
   }
-  .who-we-are .col-md-6,
-  .who-we-are .padding-fix {
+  .who-we-are-text-col {
     height: auto !important;
     min-height: 0 !important;
     padding: 20px 20px 10px 20px !important;
@@ -158,12 +157,22 @@
   .who-we-are-content > div {
     margin-bottom: 16px !important;
   }
-  .who-we-are .col-md-6[style*="background-image"],
   .who-we-are-img-col {
-    height: 340px !important;
-    min-height: 340px !important;
-    margin-top: 15px !important;
-    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0 15px 15px 15px !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+  .who-we-are-img {
+    width: 100% !important;
+    height: 320px !important;
+    min-height: 320px !important;
+    max-height: 360px !important;
+    object-fit: cover !important;
+    border-radius: 6px !important;
+    display: block !important;
   }
   
   /* Less top padding if it's right under the banner to prevent double gaps */

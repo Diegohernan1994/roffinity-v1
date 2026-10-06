@@ -68,8 +68,9 @@ import LeadSection from '../components/LeadSection.astro';
                       <a href="#" data-toggle="modal" data-target="#scheduleModal" class="btn" style="background: var(--rf-secondary-coral); color: #fff; padding: 12px 30px; font-weight: 700; border-radius: 4px; text-transform: uppercase; transition: all 0.3s;">Start a conversation <i class="fa fa-arrow-right" style="margin-left: 8px;"></i></a>
                   </div>
               </div>
-              <!-- Image Background -->
-              <div class="col-md-6 padding-fix who-we-are-img-col" style="min-height: 400px; background-image: url('/images/services/res-roof-replacement.jpg'); background-size: cover; background-position: center;">
+              <!-- Image Column -->
+              <div class="col-md-6 padding-fix who-we-are-img-col" style="min-height: 400px; display: flex;">
+                  <img src="/images/services/res-roof-replacement.jpg" alt="Roofinity Quality Craftsmanship" class="who-we-are-img" style="width: 100%; height: 100%; min-height: 400px; object-fit: cover; display: block;" />
               </div>
           </div>
       </div>
@@ -220,10 +221,21 @@ import LeadSection from '../components/LeadSection.astro';
         font-size: 13px !important;
       }
       .who-we-are-img-col {
-        height: 360px !important;
-        min-height: 360px !important;
-        margin-top: 20px !important;
-        padding: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 0 15px 15px 15px !important;
+        margin-top: 15px !important;
+        display: block !important;
+      }
+      .who-we-are-img {
+        width: 100% !important;
+        height: 320px !important;
+        min-height: 320px !important;
+        max-height: 360px !important;
+        object-fit: cover !important;
+        border-radius: 6px !important;
+        display: block !important;
       }
     }
 
@@ -237,10 +249,10 @@ import LeadSection from '../components/LeadSection.astro';
       .who-we-are-content h2 {
         font-size: 24px !important;
       }
-      .who-we-are-img-col {
-        height: 340px !important;
-        min-height: 340px !important;
-        margin-top: 15px !important;
+      .who-we-are-img {
+        height: 300px !important;
+        min-height: 300px !important;
+        max-height: 320px !important;
       }
     }
   </style>
