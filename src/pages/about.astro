@@ -1,0 +1,179 @@
+﻿---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import AppointmentModal from '../components/AppointmentModal.astro';
+import Testimonials from '../components/Testimonials.astro';
+import LeadSection from '../components/LeadSection.astro';
+---
+
+<Layout title="About Us | Roofinity" description="Roofinity provides residential and commercial roofing and gutter services throughout Greater Los Angeles.">
+  <Header />
+  <Navbar />
+
+  <!-- Page Title Banner (Tall Hero) -->
+  <section class="page-title-banner" style="background-image: url('/images/services/res-slate-shingles.jpg'); position: relative; padding: 120px 0; background-size: cover; background-position: center; margin-top: 0;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.65);"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="section-heading" style="color: #fff !important;">About <span>Us</span></h1>
+          <ol class="breadcrumb" style="background: transparent; padding: 0; margin: 0; display: inline-block;">
+            <li><a href="/" style="color: var(--rf-primary-amber); font-weight: 600;">Home</a></li>
+            <li class="active" style="color: #fff;">About</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Roofinity Section (Based on about-ecoreal) -->
+  <section class="about-ecoreal" style="padding: 80px 0; text-align: center; background: #fff;">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-10 col-md-offset-1 about-ecoreal-content">
+                  <p style="margin-bottom: 20px;"><i class="fa fa-shield fa-3x" style="color: var(--rf-primary-green);"></i></p>
+                  <h2 class="section-heading">Built around <span>your property</span></h2>
+                  <p style="font-size: 18px; line-height: 1.8; color: #555;">
+                    <strong>Roofinity</strong> provides residential and commercial roofing services throughout Greater Los Angeles. From everyday maintenance to a new installation, we help you understand the options and plan the work ahead. Every property has different needs. The conversation starts with yours.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Who We Are Section (Based on who-we-are) -->
+  <section class="who-we-are" style="background: var(--rf-primary-cream); overflow: hidden;">
+      <div class="container-fluid padding-fix">
+          <div class="row" style="display: flex; flex-wrap: wrap;">
+              <!-- Text Content -->
+              <div class="col-md-6 padding-fix" style="display: flex; align-items: center; justify-content: center; padding: 60px 40px;">
+                  <div class="who-we-are-content" style="max-width: 600px;">
+                      <span style="color: var(--rf-primary-green); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 10px;">Our Approach</span>
+                      <h2 style="font-weight: 800; font-size: 36px; margin-bottom: 20px; color: var(--rf-primary-charcoal);">Good decisions.<br>Thoughtful details.</h2>
+                      <p style="font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 30px;">
+                          Understand the condition. Consider the materials. Agree on the scope. Clear decisions help connect your project plans with the work that needs to happen.
+                      </p>
+                      
+                      <div style="margin-bottom: 20px;">
+                          <h4 style="font-weight: 700; color: var(--rf-primary-blue); margin-bottom: 8px;"><i class="fa fa-check-circle-o" style="margin-right: 8px;"></i> The right fit</h4>
+                          <p style="font-size: 15px; color: #666; margin-left: 26px;">A plan shaped around the roof, the property, and your priorities.</p>
+                      </div>
+                      <div style="margin-bottom: 35px;">
+                          <h4 style="font-weight: 700; color: var(--rf-primary-blue); margin-bottom: 8px;"><i class="fa fa-check-circle-o" style="margin-right: 8px;"></i> A clear next step</h4>
+                          <p style="font-size: 15px; color: #666; margin-left: 26px;">Practical guidance from the first discussion to project planning.</p>
+                      </div>
+
+                      <a href="#" data-toggle="modal" data-target="#scheduleModal" class="btn" style="background: var(--rf-secondary-coral); color: #fff; padding: 12px 30px; font-weight: 700; border-radius: 4px; text-transform: uppercase; transition: all 0.3s;">Start a conversation <i class="fa fa-arrow-right" style="margin-left: 8px;"></i></a>
+                  </div>
+              </div>
+              <!-- Image Background -->
+              <div class="col-md-6 padding-fix" style="min-height: 400px; background-image: url('/images/services/res-roof-replacement.jpg'); background-size: cover; background-position: center;">
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Features Section (Based on ecoreal-features) -->
+  <section class="ecoreal-features" style="padding: 80px 0; background: #fff;">
+      <div class="container">
+          <div class="row">
+             <div class="col-md-12 text-center" style="margin-bottom: 50px;">
+                 <span style="color: var(--rf-primary-green); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 10px;">Why Choose Us</span>
+                 <h2 class="section-heading">Why <span>Choose Us</span></h2>
+                 <p style="font-size: 16px; color: #555; max-width: 700px; margin: 15px auto 0;">Repairs. Replacement. A fresh start. Tell us what your property needs. Roofing solutions you can trust, for the places that matter most.</p>
+             </div>
+             
+             <!-- Feature 1 -->
+              <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                  <div class="row" style="display: flex;">
+                      <div class="col-xs-3 text-center">
+                          <i class="fa fa-home fa-3x" style="color: var(--rf-primary-blue);"></i>
+                      </div>
+                      <div class="col-xs-9">
+                          <h3 style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 10px;">RESIDENTIAL ROOFING</h3>
+                          <p style="font-size: 14px; color: #666; line-height: 1.6;">Protecting your home with premium architectural shingles, tile, and metal systems designed for durability.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Feature 2 -->
+              <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                  <div class="row" style="display: flex;">
+                      <div class="col-xs-3 text-center">
+                          <i class="fa fa-building-o fa-3x" style="color: var(--rf-primary-blue);"></i>
+                      </div>
+                      <div class="col-xs-9">
+                          <h3 style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 10px;">COMMERCIAL ROOFING</h3>
+                          <p style="font-size: 14px; color: #666; line-height: 1.6;">Flat roof solutions including TPO, PVC, and EPDM built to withstand industrial wear and weather.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Feature 3 -->
+              <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                  <div class="row" style="display: flex;">
+                      <div class="col-xs-3 text-center">
+                          <i class="fa fa-wrench fa-3x" style="color: var(--rf-primary-blue);"></i>
+                      </div>
+                      <div class="col-xs-9">
+                          <h3 style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 10px;">EXPERT REPAIRS</h3>
+                          <p style="font-size: 14px; color: #666; line-height: 1.6;">Fast, reliable leak detection and comprehensive repairs to extend the lifespan of your existing roof.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Feature 4 -->
+              <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                  <div class="row" style="display: flex;">
+                      <div class="col-xs-3 text-center">
+                          <i class="fa fa-shield fa-3x" style="color: var(--rf-primary-blue);"></i>
+                      </div>
+                      <div class="col-xs-9">
+                          <h3 style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 10px;">FULLY LICENSED & INSURED</h3>
+                          <p style="font-size: 14px; color: #666; line-height: 1.6;">Rest easy knowing every project is backed by strict safety standards and comprehensive coverage.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Feature 5 -->
+              <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                  <div class="row" style="display: flex;">
+                      <div class="col-xs-3 text-center">
+                          <i class="fa fa-leaf fa-3x" style="color: var(--rf-primary-blue);"></i>
+                      </div>
+                      <div class="col-xs-9">
+                          <h3 style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 10px;">COOL ROOF SOLUTIONS</h3>
+                          <p style="font-size: 14px; color: #666; line-height: 1.6;">Energy-saving reflective coatings and materials that meet Title 24 compliance and lower utility bills.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Feature 6 -->
+              <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                  <div class="row" style="display: flex;">
+                      <div class="col-xs-3 text-center">
+                          <i class="fa fa-certificate fa-3x" style="color: var(--rf-primary-blue);"></i>
+                      </div>
+                      <div class="col-xs-9">
+                          <h3 style="font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 10px;">FACTORY WARRANTIES</h3>
+                          <p style="font-size: 14px; color: #666; line-height: 1.6;">We use premium materials backed by industry-leading warranties, securing your investment for decades.</p>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </section>
+
+  <!-- Append Testimonials and Lead Section -->
+  <Testimonials />
+  <LeadSection />
+
+  <Footer />
+  <AppointmentModal />
+</Layout>
+
+
+

@@ -1,0 +1,442 @@
+﻿---
+// Navigation bar component with complete residential and commercial service menus
+---
+
+<div id="navbar-placeholder"></div>
+<nav class="navbar navbar-default" id="my-navbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 nav-wrapper">
+        <div class="navbar-header mobile-header-flex">
+          <a class="navbar-brand sticky-logo" href="/" style="display: flex; align-items: center; height: 100%; padding-top: 0; padding-bottom: 0;">
+            <img src="/assets/logos/roofinity-logo-white.png" alt="Roofinity Logo" style="max-height: 34px; width: auto; margin: 0;">
+          </a>
+          
+          <a href="tel:9513003512" class="mobile-phone hidden-sm hidden-md hidden-lg">
+            <i class="fa fa-phone" style="color: var(--rf-primary-amber, #FFB800); margin-right: 6px;"></i> (951) 300-3512
+          </a>
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" style="margin-right: 15px;">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse main-nav" id="navbar-collapse">
+          <ul class="nav navbar-nav main-menu">
+            <li class="active"><a href="/">Home</a></li>
+            
+            <!-- Residential Roofing Dropdown (10 Services) -->
+            <li class="dropdown">
+              <a href="#services-residential" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Residential Roofing <span class="caret"></span>
+              </a>
+                            <ul class="list-unstyled sub-menu dropdown-menu mega-menu">
+                <div class="mega-menu-grid">
+                  <a href="/services/roof-replacement" class="mega-menu-item">
+                    <div class="mega-img-wrap"><img src="/images/services/res-roof-replacement.jpg" alt="Roof Replacement"></div>
+                    <div class="mega-content">
+                      <h4>Roof Replacement</h4>
+                      <p>Complete tear-off & installation</p>
+                    </div>
+                  </a>
+                  <a href="/services/roof-repair" class="mega-menu-item">
+                    <div class="mega-img-wrap"><img src="/images/services/res-roof-repair.jpg" alt="Roof Repair"></div>
+                    <div class="mega-content">
+                      <h4>Roof Repair</h4>
+                      <p>Leak detection & precise repairs</p>
+                    </div>
+                  </a>
+                  <a href="/services/asphalt-shingles" class="mega-menu-item">
+                    <div class="mega-img-wrap"><img src="/images/services/res-asphalt-shingles.jpg" alt="Asphalt Shingles"></div>
+                    <div class="mega-content">
+                      <h4>Asphalt Shingles</h4>
+                      <p>Architectural shingle systems</p>
+                    </div>
+                  </a>
+                  <a href="/services/tile-roofing" class="mega-menu-item">
+                    <div class="mega-img-wrap"><img src="/images/services/res-tile-roofing.jpg" alt="Tile Roofing"></div>
+                    <div class="mega-content">
+                      <h4>Tile Roofing</h4>
+                      <p>Traditional clay & concrete tiles</p>
+                    </div>
+                  </a>
+                  <a href="/services/metal-roofing" class="mega-menu-item">
+                    <div class="mega-img-wrap"><img src="/images/services/res-metal-roofing.jpg" alt="Metal Roofing"></div>
+                    <div class="mega-content">
+                      <h4>Metal Roofing</h4>
+                      <p>Durable standing seam panels</p>
+                    </div>
+                  </a>
+                  <a href="/services/corrugated-roofing" class="mega-menu-item">
+                    <div class="mega-img-wrap"><img src="/images/services/res-corrugated-roofing.jpg" alt="Corrugated Roofing"></div>
+                    <div class="mega-content">
+                      <h4>Corrugated Roofing</h4>
+                      <p>Tough, ribbed metal systems</p>
+                    </div>
+                  </a>
+                  <a href="/services/cool-roofing" class="mega-menu-item">
+                    <div class="mega-img-wrap"><img src="/images/services/res-cool-roofing.jpg" alt="Cool Roofing"></div>
+                    <div class="mega-content">
+                      <h4>Cool Roofing</h4>
+                      <p>High-reflectivity energy-saving roofs</p>
+                    </div>
+                  </a>
+                  <a href="/services/fiber-cement-roofing" class="mega-menu-item">
+                    <div class="mega-img-wrap"><img src="/images/services/res-fiber-cement-roofing.jpg" alt="Fiber Cement"></div>
+                    <div class="mega-content">
+                      <h4>Fiber Cement</h4>
+                      <p>Fireproof synthetic shakes</p>
+                    </div>
+                  </a>
+                  <a href="/services/slate-shingles" class="mega-menu-item">
+                    <div class="mega-img-wrap"><img src="/images/services/res-slate-shingles.jpg" alt="Slate Shingles"></div>
+                    <div class="mega-content">
+                      <h4>Slate Shingles</h4>
+                      <p>Authentic natural quarried slate</p>
+                    </div>
+                  </a>
+                </div>
+              </ul>
+            </li>
+
+            <!-- Commercial Roofing Dropdown (6 Services) -->
+            <li class="dropdown">
+              <a href="#services-commercial" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Commercial Roofing <span class="caret"></span>
+              </a>
+                            <ul class="list-unstyled sub-menu dropdown-menu mega-menu">
+                <div class="mega-menu-grid">
+                  <a href="/services/commercial-metal-roofing" class="mega-menu-item">
+                    <div class="mega-img-wrap"><img src="/images/services/com-metal-roofing.jpg" alt="Commercial Metal"></div>
+                    <div class="mega-content">
+                      <h4>Commercial Metal</h4>
+                      <p>Heavy-duty standing seam</p>
+                    </div>
+                  </a>
+                  <a href="/services/roof-coatings" class="mega-menu-item">
+                    <div class="mega-img-wrap"><img src="/images/services/com-roof-coatings.jpg" alt="Roof Coatings"></div>
+                    <div class="mega-content">
+                      <h4>Roof Coatings</h4>
+                      <p>Fluid-applied seamless restorations</p>
+                    </div>
+                  </a>
+                  <a href="/services/acrylic-roof-coating" class="mega-menu-item">
+                    <div class="mega-img-wrap"><img src="/images/services/com-acrylic-coating.jpg" alt="Acrylic Coating"></div>
+                    <div class="mega-content">
+                      <h4>Acrylic Coating</h4>
+                      <p>Reflective water-based coatings</p>
+                    </div>
+                  </a>
+                  <a href="/services/pvc-roofing" class="mega-menu-item">
+                    <div class="mega-img-wrap"><img src="/images/services/com-pvc-roofing.jpg" alt="PVC Roofing"></div>
+                    <div class="mega-content">
+                      <h4>PVC Roofing</h4>
+                      <p>Chemical-resistant welded single-ply</p>
+                    </div>
+                  </a>
+                  <a href="/services/epdm-roofing" class="mega-menu-item">
+                    <div class="mega-img-wrap"><img src="/images/services/com-epdm-roofing.jpg" alt="EPDM Roofing"></div>
+                    <div class="mega-content">
+                      <h4>EPDM Roofing</h4>
+                      <p>Durable synthetic rubber roofs</p>
+                    </div>
+                  </a>
+                  <a href="/services/liquid-applied-roofing" class="mega-menu-item">
+                    <div class="mega-img-wrap"><img src="/images/services/com-liquid-applied.jpg" alt="Liquid-Applied"></div>
+                    <div class="mega-content">
+                      <h4>Liquid-Applied</h4>
+                      <p>Seamless monolithic membranes</p>
+                    </div>
+                  </a>
+                </div>
+              </ul>
+            </li>
+
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+
+          <!-- CTA Modal Button -->
+          <a href="#" data-toggle="modal" data-target="#scheduleModal" class="navbar-right nav-cta-btn custom-cta-align">
+            Free Inspection
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    /* Desktop Hover for Dropdowns */
+    @media (min-width: 992px) {
+      #my-navbar ul.main-menu li.dropdown:hover .dropdown-menu {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+        margin-top: 0;
+      }
+      .dropdown-menu {
+        background-color: #3c3c44;
+        border-radius: 0;
+        border: none;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        padding: 0;
+        min-width: 250px;
+        transition: all 0.3s ease;
+        top: 100% !important;
+        margin-top: 0 !important;
+      }
+      /* Invisible bridge to prevent mouse-leave when moving to submenu */
+      #my-navbar ul.main-menu li.dropdown::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 20px; /* fills any gap */
+        background: transparent;
+      }
+      .dropdown-menu > li > a {
+        color: #fff;
+        padding: 12px 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+      }
+      .dropdown-menu > li > a:hover,
+      .dropdown-menu > li > a:focus {
+        background-color: #2384EC !important;
+        color: #fff !important;
+      }
+      /* Remove the buggy template scale effect if any */
+      #my-navbar ul.main-menu li ul.sub-menu {
+        transform: none !important;
+      }
+    }
+    /* Sticky Header CSS */
+    .fixed-navbar {
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1030;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      animation: slideDown 0.3s ease-in-out;
+      margin: 0 !important;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+    
+    @media (min-width: 992px) {
+      .sticky-logo {
+        display: none !important;
+      }
+      .fixed-navbar .sticky-logo {
+        display: flex !important;
+      }
+      .nav-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .fixed-navbar .nav-wrapper {
+        justify-content: space-between;
+      }
+      /* Force the collapse container to be a flex container on desktop */
+      #navbar-collapse.collapse {
+        display: flex !important;
+        align-items: center;
+      }
+      .nav.navbar-nav.main-menu {
+        display: flex;
+        margin: 0;
+        float: none;
+      }
+      .nav.navbar-nav.main-menu > li > a {
+        white-space: nowrap;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      .custom-cta-align {
+        float: none !important;
+        margin: 0 0 0 30px !important;
+        white-space: nowrap;
+      }
+    }
+    
+    @media (max-width: 991px) {
+      .mobile-header-flex {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .sticky-logo {
+        display: flex !important;
+      }
+      .mobile-phone {
+        display: flex !important;
+        align-items: center;
+        color: #fff;
+        font-weight: bold;
+        font-size: 15px;
+        text-decoration: none;
+      }
+      .custom-cta-align {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      
+      /* Bootstrap Navbar Collapse Override for 991px */
+      .navbar-header {
+          float: none;
+      }
+      .navbar-left,.navbar-right {
+          float: none !important;
+      }
+      .navbar-toggle {
+          display: block;
+      }
+      .navbar-collapse {
+          border-top: 1px solid transparent;
+          box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      }
+      .navbar-collapse.collapse {
+          display: none !important;
+      }
+      .navbar-collapse.collapse.in {
+          display: block !important;
+      }
+      .navbar-nav {
+          float: none !important;
+          margin-top: 7.5px;
+      }
+      .navbar-nav>li {
+          float: none;
+      }
+    }
+  
+      /* Mega Menu Styles */
+      @media (min-width: 992px) {
+        .mega-menu {
+          width: 650px !important;
+          padding: 20px !important;
+          left: 50% !important;
+          transform: translateX(-50%) scale(1) !important;
+          border-radius: 12px !important;
+        }
+        #my-navbar ul.main-menu li.dropdown:hover .mega-menu {
+          transform: translateX(-50%) scale(1) !important;
+        }
+      }
+      
+      .mega-menu-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
+      
+      @media (max-width: 991px) {
+        .mega-menu {
+          width: 100% !important;
+          left: 0 !important;
+          transform: none !important;
+          padding: 10px !important;
+          background: transparent !important;
+          box-shadow: none !important;
+        }
+        .mega-menu-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      
+      .mega-menu-item {
+        display: flex !important;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 12px !important;
+        border-radius: 8px;
+        border-bottom: none !important;
+        transition: background 0.3s ease;
+        text-decoration: none !important;
+      }
+      .mega-menu-item:hover {
+        background-color: rgba(255,255,255,0.08) !important;
+      }
+      
+      .mega-img-wrap {
+        width: 80px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      }
+      .mega-img-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .mega-content h4 {
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 4px 0;
+        transition: color 0.3s ease;
+      }
+      .mega-content p {
+        font-size: 12px;
+        color: #bbb;
+        margin: 0;
+        line-height: 1.3;
+      }
+      .mega-menu-item:hover .mega-content h4 {
+        color: #2384EC;
+      }
+
+    </style>
+
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      var navbar = document.getElementById('my-navbar');
+      var placeholder = document.getElementById('navbar-placeholder');
+      var stickyOffset = navbar.offsetTop;
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset >= stickyOffset && stickyOffset > 0) {
+          if (!navbar.classList.contains('fixed-navbar')) {
+            placeholder.style.height = navbar.offsetHeight + 'px';
+            navbar.classList.add('fixed-navbar');
+          }
+        } else {
+          if (navbar.classList.contains('fixed-navbar')) {
+            navbar.classList.remove('fixed-navbar');
+            placeholder.style.height = '0px';
+          }
+        }
+      });
+      
+      window.addEventListener('resize', function() {
+        if(!navbar.classList.contains('fixed-navbar')) {
+          stickyOffset = navbar.offsetTop;
+        }
+      });
+    });
+  </script>
+</nav>
+
+
+
+
+
+
+
+
+
+
+

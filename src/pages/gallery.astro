@@ -1,0 +1,43 @@
+﻿---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import AppointmentModal from '../components/AppointmentModal.astro';
+import PhotoGallery from '../components/PhotoGallery.astro';
+import Testimonials from '../components/Testimonials.astro';
+import LeadSection from '../components/LeadSection.astro';
+---
+
+<Layout title="Project Gallery | Roofinity" description="Explore our portfolio of recent residential and commercial roofing projects.">
+  <Header />
+  <Navbar />
+
+  <!-- Page Title Banner -->
+  <section class="page-title-banner" style="background-image: url('/images/services/res-roof-replacement.jpg'); position: relative; padding: 120px 0; background-size: cover; background-position: center; margin-top: 0;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6);"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="section-heading" style="color: #fff !important;">Project <span>Gallery</span></h1>
+          <ol class="breadcrumb" style="background: transparent; padding: 0; margin: 0; display: inline-block;">
+            <li><a href="/" style="color: #2384EC; font-weight: 600;">Home</a></li>
+            <li class="active" style="color: #fff;">Gallery</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- We use our existing PhotoGallery component but add some top padding so it doesn't stick to the banner -->
+  <div style="padding-top: 60px;">
+    <PhotoGallery />
+  </div>
+
+  <Testimonials />
+  <LeadSection />
+
+  <Footer />
+  <AppointmentModal />
+</Layout>
+

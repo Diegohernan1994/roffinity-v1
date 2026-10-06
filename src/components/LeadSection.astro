@@ -1,0 +1,129 @@
+---
+// Consultation & Estimator Contact Section (Contract section in EcoReal)
+---
+
+<style>
+  .contract-section {
+    background: linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.85)), url('/images/services/res-asphalt-shingles.jpg') no-repeat center center !important;
+    background-size: cover !important;
+    padding-bottom: 0;
+  }
+  .contract-center {
+    color: #fff !important;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+    text-align: center;
+  }
+  .contract-center h2 {
+    color: #fff !important;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-transform: uppercase;
+    border-bottom: none !important;
+  }
+  .contract-form-wrapper {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  .contract-center input[type="text"],
+  .contract-center input[type="email"],
+  .contract-center input[type="tel"],
+  .contract-center select,
+  .contract-center textarea {
+    background-color: transparent !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-family: inherit;
+    display: block;
+  }
+  .contract-center select option {
+    color: #333;
+  }
+  .contract-center input::placeholder,
+  .contract-center textarea::placeholder {
+    color: #ccc !important;
+  }
+  .contract-center .submit {
+    background: var(--rf-secondary-coral, #FC5429) !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 14px 50px !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contract-social-centered ul {
+    margin: 0;
+    padding: 0;
+  }
+  .contract-social-centered ul li {
+    display: inline-block;
+    margin: 0 12px;
+  }
+  .contract-social-centered ul li a {
+    color: #fff;
+    font-size: 22px;
+    transition: color 0.3s;
+  }
+  .contract-social-centered ul li a:hover {
+    color: var(--rf-secondary-coral, #FC5429);
+  }
+</style>
+
+<section class="contract-section" id="contact-agent">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Center: Lead Capture Form -->
+      <div class="col-md-8 col-md-offset-2 col-sm-12 contract-center wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0s">
+        <h2>Request Estimate</h2>
+        
+        <div class="contract-form-wrapper">
+          <form id="consultation-form" class="lead-form-proxy">
+            <!-- Honeypot -->
+            <input type="text" name="website_url" style="display: none;" tabindex="-1" autocomplete="off">
+            
+            <input type="text" placeholder="FULL NAME" name="name" required>
+            <input type="tel" placeholder="PHONE NUMBER" name="phone" required>
+            <input type="email" placeholder="EMAIL ADDRESS" name="email" required>
+            
+            <select name="service" required>
+              <option value="Residential Roof Replacement">Residential Roof Replacement</option>
+              <option value="Residential Roof Repair">Residential Roof Repair</option>
+              <option value="Asphalt Shingles">Asphalt Shingles</option>
+              <option value="Tile Roofing">Tile Roofing</option>
+              <option value="Metal Roofing">Metal Roofing</option>
+              <option value="Commercial Metal Roofing">Commercial Metal Roofing</option>
+              <option value="Commercial Flat Roof (TPO/PVC/EPDM)">Commercial Flat Roof (TPO/PVC/EPDM)</option>
+              <option value="Roof Coatings & Restoration">Roof Coatings & Restoration</option>
+              <option value="Free Drone Inspection">Free Drone Inspection</option>
+            </select>
+            
+            <textarea placeholder="PROJECT DETAILS OR ADDRESS" name="message" rows="4"></textarea>
+            
+            <button type="submit" class="submit">
+              Send Request
+            </button>
+          </form>
+
+          <div class="contract-social-centered">
+            <ul class="list-unstyled list-inline">
+              <li><a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>

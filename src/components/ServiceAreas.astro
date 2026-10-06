@@ -1,0 +1,223 @@
+﻿---
+// Service Areas and Coverage Categories Component (Adapted for Light Theme with Side Icons)
+---
+
+<section class="service-sectors-light" style="padding: 80px 0; background: #FFFFFF;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center"> 
+        <div class="nearby" style="margin-bottom: 50px;">
+          <h1 class="section-heading wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0s" style="color: #333333;">
+            Service <span style="color: #2384EC;">Sectors</span>
+          </h1>
+          <p class="section-desc wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.1s" style="max-width: 700px; margin: 0 auto; color: #666666; font-size: 15px;">
+            Roofinity deploys fully-equipped mobile service crews across Southern California, ensuring prompt response times, precise drone inspections, and specialized equipment tailored to every property classification.
+          </p> 
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop Grid View (Hidden on Mobile) -->
+    <div class="row hidden-xs">
+      
+      <!-- Sector 1: Residential -->
+      <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s">
+        <div class="new-sector-card">
+          <i class="fa fa-home new-sector-icon"></i>
+          <div class="new-sector-content">
+            <h4>Residential</h4>
+            <p>Single-Family & HOA. Providing full metro coverage and expert care.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sector 2: Luxury Estates -->
+      <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.3s">
+        <div class="new-sector-card">
+          <i class="fa fa-diamond new-sector-icon"></i>
+          <div class="new-sector-content">
+            <h4>High-End</h4>
+            <p>Luxury Estates & Villas. Masterful tile & slate systems installed.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sector 3: Commercial -->
+      <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.4s">
+        <div class="new-sector-card">
+          <i class="fa fa-building-o new-sector-icon"></i>
+          <div class="new-sector-content">
+            <h4>Commercial</h4>
+            <p>Office Parks & Retail. Reliable TPO & PVC single-ply membranes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sector 4: Industrial -->
+      <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.5s">
+        <div class="new-sector-card">
+          <i class="fa fa-industry new-sector-icon"></i>
+          <div class="new-sector-content">
+            <h4>Industrial</h4>
+            <p>Warehouses & Logistics. Heavy-duty coatings & metal systems.</p>
+          </div>
+        </div>
+      </div> 
+
+    </div>
+
+    <!-- Mobile Carousel View (Visible only on Mobile) -->
+    <div class="visible-xs-block">
+      <div id="mobile-sector-carousel" class="owl-carousel owl-theme">
+        
+        <div class="item">
+          <div class="new-sector-card">
+            <i class="fa fa-home new-sector-icon"></i>
+            <div class="new-sector-content">
+              <h4>Residential</h4>
+              <p>Single-Family & HOA. Providing full metro coverage and expert care.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="new-sector-card">
+            <i class="fa fa-diamond new-sector-icon"></i>
+            <div class="new-sector-content">
+              <h4>High-End</h4>
+              <p>Luxury Estates & Villas. Masterful tile & slate systems installed.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="new-sector-card">
+            <i class="fa fa-building-o new-sector-icon"></i>
+            <div class="new-sector-content">
+              <h4>Commercial</h4>
+              <p>Office Parks & Retail. Reliable TPO & PVC single-ply membranes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="new-sector-card">
+            <i class="fa fa-industry new-sector-icon"></i>
+            <div class="new-sector-content">
+              <h4>Industrial</h4>
+              <p>Warehouses & Logistics. Heavy-duty coatings & metal systems.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function() {
+    var initSector = setInterval(function() {
+      if (window.jQuery && window.jQuery.fn.owlCarousel) {
+        clearInterval(initSector);
+        jQuery('#mobile-sector-carousel').owlCarousel({
+          singleItem: true,
+          autoPlay: 4000,
+          stopOnHover: true,
+          pagination: true,
+          navigation: false
+        });
+      }
+    }, 200);
+  });
+</script>
+
+<style is:global>
+  .new-sector-card {
+    position: relative;
+    padding-left: 55px; /* Creates exact space needed for the icon */
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .new-sector-icon {
+    position: absolute;
+    left: 0;
+    top: 2px; /* Perfectly aligns icon with the text block */
+    font-size: 38px; /* Large size matching the reference */
+    color: #4cb050; /* Subtle grey like the reference line-art */
+    line-height: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .new-sector-card:hover .new-sector-icon {
+    color: #2384EC; /* Lights up blue on hover */
+    transform: scale(1.05);
+  }
+  
+  .new-sector-content h4 {
+    color: #333333;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    letter-spacing: 0.5px;
+  }
+  
+  .new-sector-content p {
+    color: #666666;
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+    #mobile-sector-carousel .owl-controls {
+    display: block !important;
+    margin-top: 15px !important;
+  }
+  #mobile-sector-carousel .owl-pagination {
+    padding: 0 !important;
+    display: block !important;
+    text-align: center;
+  }
+  #mobile-sector-carousel .owl-page {
+    display: inline-block !important;
+  }
+  #mobile-sector-carousel .owl-page span {
+    width: 12px;
+    height: 12px;
+    margin: 5px 6px;
+    background: #D6D6D6 !important;
+    display: block;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    opacity: 1 !important;
+  }
+  #mobile-sector-carousel .owl-page.active span {
+    background: #2384EC !important;
+    transform: scale(1.2);
+  }
+  @media (max-width: 767px) {
+    .service-sectors-light {
+      padding-top: 40px !important;
+      padding-bottom: 0px !important; /* Eliminate bottom space on mobile */
+    }
+    .new-sector-card {
+      margin-bottom: 5px !important;
+    }
+  }
+  /* Make solid icons look like thin line-art to match the others */
+  .fa-home.new-sector-icon, .fa-industry.new-sector-icon {
+    color: transparent !important;
+    -webkit-text-stroke: 2px #4cb050;
+  }
+  
+  .new-sector-card:hover .fa-home.new-sector-icon, 
+  .new-sector-card:hover .fa-industry.new-sector-icon {
+    -webkit-text-stroke: 2px #2384EC; /* Lights up blue on hover */
+  }
+</style>
+
+
+
+

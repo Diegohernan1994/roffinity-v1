@@ -1,0 +1,175 @@
+﻿---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import AppointmentModal from '../components/AppointmentModal.astro';
+---
+
+<Layout title="Contact Us | Roofinity" description="Contact Roofinity for residential and commercial roofing in Greater Los Angeles. Request an estimate today.">
+  <Header />
+  <Navbar />
+
+  <!-- Page Title Banner -->
+  <section class="page-title-banner" style="background-image: url('/images/services/res-tile-roofing.jpg'); position: relative; padding: 120px 0; background-size: cover; background-position: center; margin-top: 0;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.65);"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="section-heading" style="color: #fff !important;">Contact <span>Us</span></h1>
+          <ol class="breadcrumb" style="background: transparent; padding: 0; margin: 0; display: inline-block;">
+            <li><a href="/" style="color: var(--rf-primary-amber); font-weight: 600;">Home</a></li>
+            <li class="active" style="color: #fff;">Contact</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Details Section -->
+  <section class="contact-page-details" style="padding: 80px 0; background: #fff;">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="contact-box clearfix" style="transition: all 0.3s ease;">
+                      <p class="col-sm-3" style="display: flex; align-items: center; justify-content: center;"><i class="fa fa-map-marker fa-2x"></i></p>
+                      <p class="col-sm-9">
+                          <span class="contact-box-heading">Office Address</span>
+                          <span>11801 Pierce St, St. 200</span>
+                          <span>Riverside, CA 92505</span>
+                      </p>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="contact-box clearfix" style="transition: all 0.3s ease;">
+                      <p class="col-sm-3" style="display: flex; align-items: center; justify-content: center;"><i class="fa fa-phone fa-2x"></i></p>
+                      <p class="col-sm-9">
+                          <span class="contact-box-heading">Phone Number</span>
+                          <span>(951) 300-3512</span>
+                          <span>Local: 951-300-3512</span>
+                      </p>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="contact-box clearfix" style="transition: all 0.3s ease;">
+                      <p class="col-sm-3" style="display: flex; align-items: center; justify-content: center;"><i class="fa fa-envelope fa-2x"></i></p>
+                      <p class="col-sm-9">
+                          <span class="contact-box-heading">Email Address</span>
+                          <span>contact@roofinity.com</span>
+                          <span>&nbsp;</span>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form" style="padding: 0 0 80px 0; background: #fff;">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 contact-form-holder">
+                  <h2 class="section-heading" style="margin-bottom: 25px;">Request an <span>Estimate</span></h2>
+                  <p class="section-desc" style="text-align: center; margin-bottom: 40px;">
+                    Your property. Your plans. Tell us what's next. A concern to resolve. A project to plan. Start the conversation here.
+                  </p>
+                  
+                  <div>                
+  					<form method="post" action="#" name="contactform" id="contactform" onsubmit="event.preventDefault(); alert('Message Sent!');">
+  						<div class="form-left col-sm-6">
+  							<input class="form-control" placeholder="Your Name *" type="text" name="name" id="name" required style="margin-bottom: 20px; height: 50px; border-radius: 4px;">
+  							<input class="form-control" placeholder="Email Address *" type="email" name="email" id="email" required style="margin-bottom: 20px; height: 50px; border-radius: 4px;">
+  							<input class="form-control" placeholder="Phone Number" type="text" name="phone" id="phone" style="margin-bottom: 20px; height: 50px; border-radius: 4px;">
+                            <input class="form-control" placeholder="Property City or ZIP Code *" type="text" name="location" id="location" required style="margin-bottom: 20px; height: 50px; border-radius: 4px;">
+                            <select class="form-control" name="service" id="service" required style="margin-bottom: 20px; height: 50px; border-radius: 4px; color: #777;">
+                                <option value="">What can we help with? *</option>
+                                <option value="Roof Replacement">Roof Replacement</option>
+                                <option value="Roof Repairs">Roof Repairs</option>
+                                <option value="Commercial Roofing">Commercial Roofing</option>
+                                <option value="Storm Damage Services">Storm Damage Services</option>
+                                <option value="Not Sure">I'm not sure yet</option>
+                            </select>
+  						</div>
+  						<div class="form-right col-sm-6">
+  							<textarea class="form-control" rows="12" placeholder="Tell us about your roof or gutters *" name="comments" id="comments" required style="margin-bottom: 20px; border-radius: 4px; padding-top: 15px;"></textarea>
+                            <label style="font-weight: normal; color: #666; margin-bottom: 20px; display: block; padding-left: 5px;">
+                                <input type="checkbox" required style="margin-right: 10px;"> I agree that Roofinity may contact me about this inquiry.
+                            </label>
+  						</div>
+  						<div class="form-button col-sm-12 text-center" style="margin-top: 10px;">
+  							<button type="submit" class="btn" style="background: var(--rf-secondary-coral); color: #fff; padding: 15px 40px; font-weight: 700; border-radius: 0; text-transform: uppercase; font-size: 16px; border: none; transition: background 0.3s; width: auto; min-width: 200px;">Send Message</button>
+  						</div>
+  					</form>
+  				</div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Google Map Section -->
+  <section class="google-map contact-map">
+      <div class="container-fluid padding-fix" style="padding:0;">
+          <div class="row" style="margin:0;">
+              <div class="col-md-12 padding-fix" style="padding:0;">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.28929947844!2d-117.49129532430035!3d33.907936173211516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcc1df06e9f1a3%3A0x6b2dc1e6a18d18d4!2s11801%20Pierce%20St%20%23200%2C%20Riverside%2C%20CA%2092505!5e0!3m2!1sen!2sus!4v1714571987541!5m2!1sen!2sus" width="100%" height="450" style="border:0; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <Footer />
+  <AppointmentModal />
+</Layout>
+
+<style>
+    .contact-box {
+        border: 1px solid #F1F1F1;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: stretch;
+    }
+    .contact-box p.col-sm-3 {
+        background: #F9F9F9;
+        text-align: center;
+        padding: 40px 0;
+        color: #dadada;
+        border-right: 1px solid #f1f1f1;
+        margin: 0;
+        width: 25%;
+    }
+    .contact-box:hover p.col-sm-3 {
+        background: var(--rf-primary-green);
+    }
+    .contact-box p.col-sm-3 i {
+        transition: 0.5s ease;
+    }
+    .contact-box:hover p.col-sm-3 i {
+        color: #fff;
+    }
+    .contact-box p.col-sm-9 {
+        padding: 20px;
+        margin: 0;
+        width: 75%;
+    }
+    .contact-box p.col-sm-9 span {
+        display: block;
+        margin-left: 10px;
+        color: #666;
+        margin-bottom: 5px;
+    }
+    .contact-box p.col-sm-9 span.contact-box-heading {
+        color: var(--rf-primary-charcoal);
+        font-weight: 700;
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+    
+    .form-control:focus {
+        border-color: var(--rf-primary-green);
+        box-shadow: none;
+    }
+    
+    .btn:hover {
+        background: var(--rf-primary-green) !important;
+    }
+</style>

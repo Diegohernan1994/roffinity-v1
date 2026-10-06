@@ -1,0 +1,265 @@
+﻿---
+// Navigation bar component with complete residential and commercial service menus
+---
+
+<div id="navbar-placeholder"></div>
+<nav class="navbar navbar-default" id="my-navbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 nav-wrapper">
+        <div class="navbar-header mobile-header-flex">
+          <a class="navbar-brand sticky-logo" href="/" style="display: flex; align-items: center; height: 100%; padding-top: 0; padding-bottom: 0;">
+            <img src="/assets/logos/roofinity-logo-white.png" alt="Roofinity Logo" style="max-height: 34px; width: auto; margin: 0;">
+          </a>
+          
+          <a href="tel:9513003512" class="mobile-phone hidden-sm hidden-md hidden-lg">
+            <i class="fa fa-phone" style="color: var(--rf-primary-amber, #FFB800); margin-right: 6px;"></i> (951) 300-3512
+          </a>
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" style="margin-right: 15px;">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse main-nav" id="navbar-collapse">
+          <ul class="nav navbar-nav main-menu">
+            <li class="active"><a href="/">Home</a></li>
+            
+            <!-- Residential Roofing Dropdown (10 Services) -->
+            <li class="dropdown">
+              <a href="#services-residential" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Residential Roofing <span class="caret"></span>
+              </a>
+              <ul class="list-unstyled sub-menu dropdown-menu">
+                <li><a href="/services/roof-replacement">Roof Replacement</a></li>
+                <li><a href="/services/roof-repair">Roof Repair</a></li>
+                <li><a href="/services/asphalt-shingles">Asphalt Shingles</a></li>
+                <li><a href="/services/tile-roofing">Tile Roofing</a></li>
+                <li><a href="/services/metal-roofing">Metal Roofing</a></li>
+                <li><a href="/services/corrugated-roofing">Corrugated Roofing</a></li>
+                <li><a href="/services/cool-roofing">Cool Roofing</a></li>
+                <li><a href="/services/fiber-cement-roofing">Fiber Cement Roofing</a></li>
+                <li><a href="/services/slate-shingles">Slate Shingles</a></li>
+              </ul>
+            </li>
+
+            <!-- Commercial Roofing Dropdown (6 Services) -->
+            <li class="dropdown">
+              <a href="#services-commercial" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Commercial Roofing <span class="caret"></span>
+              </a>
+              <ul class="list-unstyled sub-menu dropdown-menu">
+                <li><a href="/services/commercial-metal-roofing">Commercial Metal Roofing</a></li>
+                <li><a href="/services/roof-coatings">Roof Coatings</a></li>
+                <li><a href="/services/acrylic-roof-coating">Acrylic Roof Coating</a></li>
+                <li><a href="/services/pvc-roofing">PVC Roofing</a></li>
+                <li><a href="/services/epdm-roofing">EPDM Roofing</a></li>
+                <li><a href="/services/liquid-applied-roofing">Liquid-Applied Roofing</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#about-roofinity">About Us</a></li>
+            <li><a href="#photo-gallery">Gallery</a></li>
+            <li><a href="#latest-projects">Projects</a></li>
+            <li><a href="#contact-agent">Contact</a></li>
+          </ul>
+
+          <!-- CTA Modal Button -->
+          <a href="#" data-toggle="modal" data-target="#scheduleModal" class="navbar-right nav-cta-btn custom-cta-align">
+            Free Inspection
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    /* Desktop Hover for Dropdowns */
+    @media (min-width: 992px) {
+      #my-navbar ul.main-menu li.dropdown:hover .dropdown-menu {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+        margin-top: 0;
+      }
+      .dropdown-menu {
+        background-color: #3c3c44;
+        border-radius: 0;
+        border: none;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        padding: 0;
+        min-width: 250px;
+        transition: all 0.3s ease;
+        top: 100% !important;
+        margin-top: 0 !important;
+      }
+      /* Invisible bridge to prevent mouse-leave when moving to submenu */
+      #my-navbar ul.main-menu li.dropdown::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 20px; /* fills any gap */
+        background: transparent;
+      }
+      .dropdown-menu > li > a {
+        color: #fff;
+        padding: 12px 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+      }
+      .dropdown-menu > li > a:hover,
+      .dropdown-menu > li > a:focus {
+        background-color: #2384EC !important;
+        color: #fff !important;
+      }
+      /* Remove the buggy template scale effect if any */
+      #my-navbar ul.main-menu li ul.sub-menu {
+        transform: none !important;
+      }
+    }
+    /* Sticky Header CSS */
+    .fixed-navbar {
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1030;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      animation: slideDown 0.3s ease-in-out;
+      margin: 0 !important;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+    
+    @media (min-width: 992px) {
+      .sticky-logo {
+        display: none !important;
+      }
+      .fixed-navbar .sticky-logo {
+        display: flex !important;
+      }
+      .nav-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .fixed-navbar .nav-wrapper {
+        justify-content: space-between;
+      }
+      /* Force the collapse container to be a flex container on desktop */
+      #navbar-collapse.collapse {
+        display: flex !important;
+        align-items: center;
+      }
+      .nav.navbar-nav.main-menu {
+        display: flex;
+        margin: 0;
+        float: none;
+      }
+      .nav.navbar-nav.main-menu > li > a {
+        white-space: nowrap;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      .custom-cta-align {
+        float: none !important;
+        margin: 0 0 0 30px !important;
+        white-space: nowrap;
+      }
+    }
+    
+    @media (max-width: 991px) {
+      .mobile-header-flex {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .sticky-logo {
+        display: flex !important;
+      }
+      .mobile-phone {
+        display: flex !important;
+        align-items: center;
+        color: #fff;
+        font-weight: bold;
+        font-size: 15px;
+        text-decoration: none;
+      }
+      .custom-cta-align {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      
+      /* Bootstrap Navbar Collapse Override for 991px */
+      .navbar-header {
+          float: none;
+      }
+      .navbar-left,.navbar-right {
+          float: none !important;
+      }
+      .navbar-toggle {
+          display: block;
+      }
+      .navbar-collapse {
+          border-top: 1px solid transparent;
+          box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      }
+      .navbar-collapse.collapse {
+          display: none !important;
+      }
+      .navbar-collapse.collapse.in {
+          display: block !important;
+      }
+      .navbar-nav {
+          float: none !important;
+          margin-top: 7.5px;
+      }
+      .navbar-nav>li {
+          float: none;
+      }
+    }
+  </style>
+
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      var navbar = document.getElementById('my-navbar');
+      var placeholder = document.getElementById('navbar-placeholder');
+      var stickyOffset = navbar.offsetTop;
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset >= stickyOffset && stickyOffset > 0) {
+          if (!navbar.classList.contains('fixed-navbar')) {
+            placeholder.style.height = navbar.offsetHeight + 'px';
+            navbar.classList.add('fixed-navbar');
+          }
+        } else {
+          if (navbar.classList.contains('fixed-navbar')) {
+            navbar.classList.remove('fixed-navbar');
+            placeholder.style.height = '0px';
+          }
+        }
+      });
+      
+      window.addEventListener('resize', function() {
+        if(!navbar.classList.contains('fixed-navbar')) {
+          stickyOffset = navbar.offsetTop;
+        }
+      });
+    });
+  </script>
+</nav>
+
+
+
+
+
+
+

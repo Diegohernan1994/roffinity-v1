@@ -1,0 +1,49 @@
+---
+// Thank You Page conforming strictly to landing_master_process & astro_agent_protocol.md
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Request Received | Roofinity Premier Roofing" description="Thank you for reaching out to Roofinity. A certified roofing inspector will review your inquiry shortly.">
+  <div style="min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; background: linear-gradient(rgba(18, 28, 40, 0.88), rgba(18, 28, 40, 0.95)), url('/assets/roofing/hero-slide-1.jpg') center/cover no-repeat fixed; color: #FFFFFF; font-family: 'Century Gothic', -apple-system, sans-serif; padding: 40px 20px; text-align: center;">
+    
+    <!-- Top Block: Official Brand Logo -->
+    <div style="padding-top: 10px;">
+      <a href="/">
+        <img src="/assets/logos/roofinity-logo-white.png" alt="Roofinity Logo" style="max-height: 52px; width: auto; display: inline-block;">
+      </a>
+    </div>
+
+    <!-- Center Block: Request Confirmation -->
+    <div style="max-width: 680px; margin: 0 auto; padding: 30px 20px; background: rgba(51, 51, 51, 0.45); backdrop-filter: blur(8px); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.12); box-shadow: 0 15px 40px rgba(0,0,0,0.3);">
+      <div style="font-size: 13px; font-weight: 700; letter-spacing: 3px; color: var(--rf-primary-amber); text-transform: uppercase; margin-bottom: 12px;">
+        REQUEST RECEIVED
+      </div>
+      
+      <h1 style="font-size: clamp(28px, 4vw, 42px); font-weight: 700; margin: 0 0 16px 0; color: #FFFFFF; line-height: 1.2;">
+        Thank You for Choosing Roofinity
+      </h1>
+
+      <div style="width: 80px; height: 3px; background: var(--rf-primary-amber); margin: 0 auto 20px auto; border-radius: 2px;"></div>
+
+      <p style="font-size: 16px; line-height: 1.6; color: #E0E0E0; margin-bottom: 28px;">
+        Your project details have been successfully transmitted to our field engineering department. A licensed Roofinity inspector will review your specifications and contact you promptly to confirm your appointment.
+      </p>
+
+      <div style="display: flex; gap: 15px; justify-content: center; align-items: center; flex-wrap: wrap;">
+        <a href="tel:9513003512" style="background: var(--rf-secondary-coral); color: #FFFFFF; padding: 13px 30px; border-radius: 4px; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; text-decoration: none; box-shadow: 0 4px 15px rgba(252, 84, 41, 0.35); display: inline-flex; align-items: center; gap: 8px;">
+          <i class="fa fa-phone"></i> Call (951) 300-3512
+        </a>
+        <a href="/" style="background: transparent; color: #FFFFFF; border: 1px solid rgba(255, 255, 255, 0.4); padding: 13px 26px; border-radius: 4px; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.8px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+          <i class="fa fa-home"></i> Back to Homepage
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom Block: Legal Disclaimers -->
+    <div style="font-size: 12px; color: #AAAAAA; padding-bottom: 10px;">
+      <p style="margin: 0;">Roofinity Inc. • CSLB Contractor License #1084920 (C-39 Roofing) • Fully Bonded & Insured</p>
+      <p style="margin: 4px 0 0 0;">11801 Pierce St, St. 200, Riverside, CA 92505 • All Rights Reserved © 2026</p>
+    </div>
+
+  </div>
+</Layout>

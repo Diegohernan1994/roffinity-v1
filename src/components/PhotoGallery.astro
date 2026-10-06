@@ -1,0 +1,169 @@
+﻿---
+// Filterable Photo Gallery Component with MixItUp and Custom Links
+---
+
+<section class="photo-gallery" id="photo-gallery">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 class="section-heading wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0s">
+          Project <span>Gallery</span>
+        </h1>
+        <p class="section-desc wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.1s">
+          Explore a selection of our premier residential and commercial roofing installations across the region. Each project exemplifies rigorous engineering, factory warranties, and meticulous craftsmanship.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <div class="controls text-center" style="margin-bottom: 30px;">
+          <button class="filter active" data-filter="all">All Projects</button>
+          <button class="filter" data-filter=".shingle">Asphalt Shingles</button>
+          <button class="filter" data-filter=".tile">Tile & Slate Roofing</button>
+          <button class="filter" data-filter=".metal">Metal & Corrugated</button>
+          <button class="filter" data-filter=".commercial">PVC & EPDM Flat</button>
+          <button class="filter" data-filter=".coating">Liquid & Coatings</button>
+        </div>
+
+        <div id="container-mix" class="container-mix grid-effect">
+          
+          <!-- Project 1: Shingle -->
+          <div class="mix shingle col-md-4 col-sm-6 col-xs-6 padding-fix" data-myorder="1" style="display: inline-block;">
+            <figure class="effect-zoe" style="margin: 0; position: relative; overflow: hidden; background: #222222;">
+              <img src="/images/services/res-asphalt-shingles.jpg" alt="Architectural Asphalt Shingles" style="width: 100%; height: 400px; object-fit: cover;">
+              <figcaption>
+                <div>
+                  <a href="/projects/residential-shingle-roof" class="custom-project-btn" title="Residential Shingle Roof"><i class="fa fa-search"></i></a>
+                  <a href="/projects/residential-shingle-roof"><h3>Residential Shingle Roof</h3></a>
+                </div>
+              </figcaption>			
+            </figure>
+          </div>
+
+          <!-- Project 2: Tile -->
+          <div class="mix tile col-md-4 col-sm-6 col-xs-6 padding-fix" data-myorder="2" style="display: inline-block;">
+            <figure class="effect-zoe" style="margin: 0; position: relative; overflow: hidden; background: #222222;">
+              <img src="/images/services/res-tile-roofing.jpg" alt="Spanish Terracotta Clay Tile" style="width: 100%; height: 400px; object-fit: cover;">
+              <figcaption>
+                <div>
+                  <a href="/projects/shingle-roof-finished-views" class="custom-project-btn" title="Shingle Roof Finished Views"><i class="fa fa-search"></i></a>
+                  <a href="/projects/shingle-roof-finished-views"><h3>Shingle Roof Finished Views</h3></a>
+                </div>
+              </figcaption>			
+            </figure>
+          </div>
+
+          <!-- Project 3: Metal -->
+          <div class="mix metal col-md-4 col-sm-6 col-xs-6 padding-fix" data-myorder="3" style="display: inline-block;">
+            <figure class="effect-zoe" style="margin: 0; position: relative; overflow: hidden; background: #222222;">
+              <img src="/images/services/res-metal-roofing.jpg" alt="Standing Seam Metal Roofing" style="width: 100%; height: 400px; object-fit: cover;">
+              <figcaption>
+                <div>
+                  <a href="/projects/roof-preparation-aerial" class="custom-project-btn" title="Roof Preparation Aerial"><i class="fa fa-search"></i></a>
+                  <a href="/projects/roof-preparation-aerial"><h3>Roof Preparation Aerial</h3></a>
+                </div>
+              </figcaption>			
+            </figure>
+          </div>
+
+          <!-- Project 4: PVC -->
+          <div class="mix commercial col-md-4 col-sm-6 col-xs-6 padding-fix" data-myorder="4" style="display: inline-block;">
+            <figure class="effect-zoe" style="margin: 0; position: relative; overflow: hidden; background: #222222;">
+              <img src="/images/services/com-pvc-roofing.jpg" alt="Commercial Single-Ply PVC Roofing" style="width: 100%; height: 400px; object-fit: cover;">
+              <figcaption>
+                <div>
+                  <a href="/projects/dormer-roof-progress" class="custom-project-btn" title="Dormer Roof Progress"><i class="fa fa-search"></i></a>
+                  <a href="/projects/dormer-roof-progress"><h3>Dormer Roof Progress</h3></a>
+                </div>
+              </figcaption>			
+            </figure>
+          </div>
+
+          <!-- Project 5: Liquid Applied -->
+          <div class="mix coating col-md-4 col-sm-6 col-xs-6 padding-fix" data-myorder="5" style="display: inline-block;">
+            <figure class="effect-zoe" style="margin: 0; position: relative; overflow: hidden; background: #222222;">
+              <img src="/images/services/com-liquid-applied.jpg" alt="Liquid-Applied Roofing Membrane" style="width: 100%; height: 400px; object-fit: cover;">
+              <figcaption>
+                <div>
+                  <a href="/projects/roofing-work-property" class="custom-project-btn" title="Roofing Work Property Views"><i class="fa fa-search"></i></a>
+                  <a href="/projects/roofing-work-property"><h3>Roofing Work Property Views</h3></a>
+                </div>
+              </figcaption>			
+            </figure>
+          </div>
+
+          <!-- Project 6: Slate -->
+          <div class="mix tile col-md-4 col-sm-6 col-xs-6 padding-fix" data-myorder="6" style="display: inline-block;">
+            <figure class="effect-zoe" style="margin: 0; position: relative; overflow: hidden; background: #222222;">
+              <img src="/images/services/res-slate-shingles.jpg" alt="Natural Slate Shingles" style="width: 100%; height: 400px; object-fit: cover;">
+              <figcaption>
+                <div>
+                  <a href="/projects/low-slope-surface" class="custom-project-btn" title="Low-Slope Surface View"><i class="fa fa-search"></i></a>
+                  <a href="/projects/low-slope-surface"><h3>Low-Slope Surface View</h3></a>
+                </div>
+              </figcaption>			
+            </figure>
+          </div>
+
+          <!-- Project 7: Corrugated -->
+          <div class="mix metal col-md-4 col-sm-6 col-xs-6 padding-fix" data-myorder="7" style="display: inline-block;">
+            <figure class="effect-zoe" style="margin: 0; position: relative; overflow: hidden; background: #222222;">
+              <img src="/images/services/res-corrugated-roofing.jpg" alt="Architectural Corrugated Metal" style="width: 100%; height: 400px; object-fit: cover;">
+              <figcaption>
+                <div>
+                  <a href="/projects/residential-property-views" class="custom-project-btn" title="Residential Property Views"><i class="fa fa-search"></i></a>
+                  <a href="/projects/residential-property-views"><h3>Residential Property Views</h3></a>
+                </div>
+              </figcaption>			
+            </figure>
+          </div>
+
+          <!-- Project 8: EPDM -->
+          <div class="mix commercial col-md-4 col-sm-6 col-xs-6 padding-fix" data-myorder="8" style="display: inline-block;">
+            <figure class="effect-zoe" style="margin: 0; position: relative; overflow: hidden; background: #222222;">
+              <img src="/images/services/com-epdm-roofing.jpg" alt="Industrial EPDM Rubber Roofing" style="width: 100%; height: 400px; object-fit: cover;">
+              <figcaption>
+                <div>
+                  <a href="/projects/shingle-roof-geometry" class="custom-project-btn" title="Shingle Roof Geometry"><i class="fa fa-search"></i></a>
+                  <a href="/projects/shingle-roof-geometry"><h3>Shingle Roof Geometry</h3></a>
+                </div>
+              </figcaption>			
+            </figure>
+          </div>
+
+          <!-- Project 9: Coatings -->
+          <div class="mix coating col-md-4 col-sm-6 col-xs-6 padding-fix" data-myorder="9" style="display: inline-block;">
+            <figure class="effect-zoe" style="margin: 0; position: relative; overflow: hidden; background: #222222;">
+              <img src="/images/services/com-roof-coatings.jpg" alt="Silicone Roof Coating Restoration" style="width: 100%; height: 400px; object-fit: cover;">
+              <figcaption>
+                <div>
+                  <a href="/projects/roof-details-closer-look" class="custom-project-btn" title="Roof Details Closer Look"><i class="fa fa-search"></i></a>
+                  <a href="/projects/roof-details-closer-look"><h3>Roof Details Closer Look</h3></a>
+                </div>
+              </figcaption>			
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 767px) {
+    /* 2 columns means images shouldn't be 400px tall, making them square-ish */
+    #photo-gallery .mix img {
+      height: 200px !important;
+    }
+    /* Hide the 9th item on mobile to ensure an even number (no empty columns) */
+    #photo-gallery .mix[data-myorder="9"] {
+      display: none !important;
+    }
+  }
+</style>
+
+

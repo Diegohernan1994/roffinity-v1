@@ -1,0 +1,450 @@
+﻿---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import AppointmentModal from '../../components/AppointmentModal.astro';
+import Testimonials from '../../components/Testimonials.astro';
+import LeadSection from '../../components/LeadSection.astro';
+---
+
+<Layout 
+  title="Master Roof Replacement Services | Roofinity"
+  description="Upgrade your home with a complete roof replacement from Roofinity. We offer tear-offs, decking repair, and premium material installation."
+>
+  <Header />
+  <Navbar />
+
+  <!-- Page Header (Breadcrumb style from Furnart adapted) -->
+  <section class="page-title-banner" style="background-image: url('/images/services/res-roof-replacement.jpg'); position: relative; padding: 120px 0; background-size: cover; background-position: center; margin-top: 0;">
+    <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7);"></div>
+    <div class="container" style="position: relative; z-index: 2; text-align: center;">
+      <h1 class="section-heading" style="color: #fff !important;">Roof <span>Replacement</span></h1>
+      <ol class="breadcrumb" style="background: transparent; padding: 0; display: inline-block; font-size: 15px; font-weight: 500;">
+        <li><a href="/" style="color: #4cb050; text-decoration: none;">Home</a></li>
+        <li><a href="#" style="color: #4cb050; text-decoration: none;">Services</a></li>
+        <li class="active" style="color: #fff;">Roof Replacement</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Service Details Content -->
+  <section class="service-details-section" style="padding: 80px 0 40px 0; background: #fff;">
+    <div class="container">
+      <div class="row">
+        <!-- Left Content -->
+        <div class="col-md-8 col-sm-12">
+           <img src="/images/services/res-roof-replacement.jpg" alt="Roof Replacement" class="img-responsive" style="border-radius: 0; margin-bottom: 35px; width: 100%; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+           
+           <h2 style="font-weight: 800; margin-top: 0; margin-bottom: 25px; color: #222; font-size: 32px; text-transform: uppercase;">Complete Roof Replacement Solutions</h2>
+           <p style="font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 20px;">
+             A failing roof compromises your entire home. At Roofinity, our complete roof replacement services go beyond just nailing new shingles. We conduct a full tear-off down to the decking, ensuring the structural integrity of your home is sound before we build your new roofing system from the ground up.
+           </p>
+           <p style="font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 40px;">
+             From premium underlayments to state-of-the-art ventilation and high-grade shingles or tiles, we install a cohesive system designed to withstand harsh weather, improve energy efficiency, and elevate your property value. Every full replacement comes with industry-leading manufacturer warranties and our own workmanship guarantee.
+           </p>
+
+           <!-- Adapted Accordion (FAQ) using BS3 -->
+           <h3 style="font-weight: 800; margin-bottom: 25px; margin-top: 0px; color: #222; font-size: 26px; text-transform: uppercase;">Frequently Asked Questions</h3>
+           <div class="panel-group" id="faqAccordion" role="tablist" aria-multiselectable="true" style="margin-bottom: 30px;">
+             <!-- FAQ 1 -->
+             <div class="panel panel-default" style="border-radius: 0; border: none; border-bottom: 1px solid #eaeaea; box-shadow: none;">
+               <div class="panel-heading" role="tab" id="headingOne" style="background: transparent; padding: 20px 0;">
+                 <h4 class="panel-title">
+                   <a role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-weight: 700; color: #333; text-decoration: none; display: block; font-size: 18px;">
+                     <i class="fa fa-angle-down" style="color: #4cb050; margin-right: 10px;"></i> How long does a full roof replacement take?
+                   </a>
+                 </h4>
+               </div>
+               <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                 <div class="panel-body" style="border-top: none; padding: 0 0 20px 30px; color: #666; line-height: 1.8; font-size: 15px;">
+                   Most residential roof replacements are completed within 1 to 2 days, depending on the size of the roof and the extent of any hidden decking damage.
+                 </div>
+               </div>
+             </div>
+             <!-- FAQ 2 -->
+             <div class="panel panel-default" style="border-radius: 0; border: none; border-bottom: 1px solid #eaeaea; box-shadow: none;">
+               <div class="panel-heading" role="tab" id="headingTwo" style="background: transparent; padding: 20px 0;">
+                 <h4 class="panel-title">
+                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-weight: 700; color: #333; text-decoration: none; display: block; font-size: 18px;">
+                     <i class="fa fa-angle-right" style="color: #4cb050; margin-right: 10px;"></i> Will you tear off the old roof or just overlay it?
+                   </a>
+                 </h4>
+               </div>
+               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                 <div class="panel-body" style="border-top: none; padding: 0 0 20px 30px; color: #666; line-height: 1.8; font-size: 15px;">
+                   We strongly recommend and perform a complete tear-off. Overlaying hides existing decking issues, voids manufacturer warranties, and adds unnecessary weight to your home structure.
+                 </div>
+               </div>
+             </div>
+             <!-- FAQ 3 -->
+             <div class="panel panel-default" style="border-radius: 0; border: none; border-bottom: 1px solid #eaeaea; box-shadow: none;">
+               <div class="panel-heading" role="tab" id="headingThree" style="background: transparent; padding: 20px 0;">
+                 <h4 class="panel-title">
+                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-weight: 700; color: #333; text-decoration: none; display: block; font-size: 18px;">
+                     <i class="fa fa-angle-right" style="color: #4cb050; margin-right: 10px;"></i> How do I know if I need a repair or a full replacement?
+                   </a>
+                 </h4>
+               </div>
+               <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                 <div class="panel-body" style="border-top: none; padding: 0 0 20px 30px; color: #666; line-height: 1.8; font-size: 15px;">
+                   If your roof is over 15-20 years old, has widespread shingle curling, multiple leaks, or extensive granule loss, a full replacement is usually the most cost-effective long-term solution.
+                 </div>
+               </div>
+             </div>
+           </div>
+
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="col-md-4 col-sm-12 right-sidebar-mobile">
+          <!-- Categories / Other Services -->
+          <div class="sidebar-widget" style="background: #fbfbfb; padding: 30px; margin-bottom: 30px; border: 1px solid #eee;">
+            <h4 style="margin-top: 0; font-weight: 800; text-transform: uppercase; border-bottom: 2px solid #4cb050; padding-bottom: 15px; margin-bottom: 25px; font-size: 20px;">Our Services</h4>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="border-bottom: 1px solid #eaeaea; padding: 12px 0;"><a href="#" style="color: #555; text-decoration: none; font-weight: 600; font-size: 15px; display: block; transition: all 0.3s;"><i class="fa fa-angle-right" style="margin-right: 8px; color: #ccc;"></i> Residential Roofing</a></li>
+              <li style="border-bottom: 1px solid #eaeaea; padding: 12px 0;"><a href="#" style="color: #555; text-decoration: none; font-weight: 600; font-size: 15px; display: block; transition: all 0.3s;"><i class="fa fa-angle-right" style="margin-right: 8px; color: #ccc;"></i> Commercial Roofing</a></li>
+              <li style="border-bottom: 1px solid #eaeaea; padding: 12px 0;"><a href="#" style="color: #4cb050; text-decoration: none; font-weight: 700; font-size: 15px; display: block; transition: all 0.3s;"><i class="fa fa-angle-right" style="margin-right: 8px; color: #4cb050;"></i> Roof Repair</a></li>
+              <li style="border-bottom: 1px solid #eaeaea; padding: 12px 0;"><a href="#" style="color: #555; text-decoration: none; font-weight: 600; font-size: 15px; display: block; transition: all 0.3s;"><i class="fa fa-angle-right" style="margin-right: 8px; color: #ccc;"></i> Roof Replacement</a></li>
+              <li style="padding: 12px 0;"><a href="#" style="color: #555; text-decoration: none; font-weight: 600; font-size: 15px; display: block; transition: all 0.3s;"><i class="fa fa-angle-right" style="margin-right: 8px; color: #ccc;"></i> Routine Maintenance</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact / Emergency Widget -->
+          <div class="sidebar-widget text-center" style="background: linear-gradient(135deg, rgba(35, 132, 236, 1), rgba(40, 115, 240, 1)); color: #fff; padding: 40px 30px;">
+            <i class="fa fa-phone" style="font-size: 40px; margin-bottom: 20px; color: #fff;"></i>
+            <h4 style="margin-top: 0; color: #fff; font-weight: 800; text-transform: uppercase; margin-bottom: 15px; font-size: 22px;">Need Urgent Repairs?</h4>
+            <p style="margin-bottom: 25px; font-size: 15px; color: #E0F0FF; line-height: 1.6;">Our emergency dispatch team is ready to secure your property immediately.</p>
+            <a href="tel:9513003512" class="btn btn-default" style="background: #fff; color: #2384EC; font-weight: 800; font-size: 18px; width: 100%; border-radius: 0; padding: 15px 0; border: none; transition: all 0.3s;">(951) 300-3512</a>
+            <a href="#" data-toggle="modal" data-target="#scheduleModal" class="btn btn-success" style="background: #4cb050; border-color: #4cb050; color: #fff; font-weight: 800; font-size: 15px; width: 100%; border-radius: 0; padding: 15px 0; margin-top: 15px; transition: all 0.3s;">BOOK INSPECTION</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section (Full Width) -->
+  <section class="photo-gallery" style="padding-top: 40px; padding-bottom: 40px; background: #F8F9FA;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="section-heading wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0s">
+            Replacement <span style="color: #2384EC;">Project Gallery</span>
+          </h1>
+          <p class="section-desc wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.1s" style="margin-bottom: 40px;">
+            Explore our complete tear-off and replacement projects, showcasing our precision from decking to final ridge cap.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Gallery row -->
+          <div id="container-mix" class="container-mix grid-effect">
+            
+            <div class="mix col-md-3 col-sm-6 col-xs-6 padding-fix" style="display: inline-block;">
+              <figure class="effect-zoe" style="margin: 0; position: relative; overflow: hidden; background: #222222;">
+                <img src="/images/services/res-asphalt-shingles.jpg" alt="Roof Repair" style="width: 100%; height: 300px; object-fit: cover;">
+                <figcaption>
+                  <div>
+                    <a href="/images/services/res-asphalt-shingles.jpg" class="preview-btn" title="Roof Repair"><i class="fa fa-search"></i></a>
+                    <a href="#" data-toggle="modal" data-target="#scheduleModal"><h3>Shingle Patch</h3></a>
+                  </div>
+                </figcaption>			
+              </figure>
+            </div>
+
+            <div class="mix col-md-3 col-sm-6 col-xs-6 padding-fix" style="display: inline-block;">
+              <figure class="effect-zoe" style="margin: 0; position: relative; overflow: hidden; background: #222222;">
+                <img src="/images/services/res-roof-repair.jpg" alt="Flashing Repair" style="width: 100%; height: 300px; object-fit: cover;">
+                <figcaption>
+                  <div>
+                    <a href="/images/services/res-roof-repair.jpg" class="preview-btn" title="Flashing Repair"><i class="fa fa-search"></i></a>
+                    <a href="#" data-toggle="modal" data-target="#scheduleModal"><h3>Flashing Seal</h3></a>
+                  </div>
+                </figcaption>			
+              </figure>
+            </div>
+
+            <div class="mix col-md-3 col-sm-6 col-xs-6 padding-fix" style="display: inline-block;">
+              <figure class="effect-zoe" style="margin: 0; position: relative; overflow: hidden; background: #222222;">
+                <img src="/images/services/res-metal-roofing.jpg" alt="Leak Repair" style="width: 100%; height: 300px; object-fit: cover;">
+                <figcaption>
+                  <div>
+                    <a href="/images/services/res-metal-roofing.jpg" class="preview-btn" title="Leak Repair"><i class="fa fa-search"></i></a>
+                    <a href="#" data-toggle="modal" data-target="#scheduleModal"><h3>Leak Isolation</h3></a>
+                  </div>
+                </figcaption>			
+              </figure>
+            </div>
+
+            <div class="mix col-md-3 col-sm-6 col-xs-6 padding-fix" style="display: inline-block;">
+              <figure class="effect-zoe" style="margin: 0; position: relative; overflow: hidden; background: #222222;">
+                <img src="/images/services/com-metal-roofing.jpg" alt="Commercial Repair" style="width: 100%; height: 300px; object-fit: cover;">
+                <figcaption>
+                  <div>
+                    <a href="/images/services/com-metal-roofing.jpg" class="preview-btn" title="Commercial Repair"><i class="fa fa-search"></i></a>
+                    <a href="#" data-toggle="modal" data-target="#scheduleModal"><h3>Flat Roof TPO</h3></a>
+                  </div>
+                </figcaption>			
+              </figure>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Repair Case Studies Section (Full Width Container) -->
+  <section class="property-lists" style="padding-top: 60px; padding-bottom: 60px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="property">
+            <h1 class="section-heading wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0s">
+              Recent <span style="color: #2384EC;">Replacement Installations</span>
+            </h1>
+            <p class="section-desc wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.1s" style="margin-bottom: 40px;">
+              Review our latest roof replacement achievements. Every installation includes full underlayment upgrades and premium flashing.
+            </p> 
+          </div>
+        </div>
+      </div>
+      
+      <!-- Desktop Grid -->
+      <div class="row hidden-xs" style="display: flex; flex-wrap: wrap; align-items: stretch;">
+        
+        <!-- Project 1 -->
+        <div class="col-md-4 col-sm-6 wow fadeInUp" style="display: flex; flex-direction: column; margin-bottom: 30px; visibility: visible; animation-name: fadeInUp;">
+          <div class="latest-pic1" style="height: 230px; background-image: url('/images/services/res-slate-shingles.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="latest-pic-bottom" style="flex: 1; display: flex; flex-direction: column;">
+            <div class="pic-address">Burbank, CA</div>
+            <div class="description-wrap" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+              <div class="pic-description">
+                <h3 style="font-size: 20px;"><a href="#" data-toggle="modal" data-target="#scheduleModal">Complete Shingle Tear-Off</a></h3>
+                <p>Full removal of two layers of old shingles and installation of an architectural roofing system.</p>
+              </div>
+              <div class="pic-mesure">
+                <span style="display: inline-block; width: auto;"><i class="fa fa-shield"></i> 5-Yr Repair Warranty</span>
+              </div>
+            </div>
+          </div>       
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4 col-sm-6 wow fadeInUp" style="display: flex; flex-direction: column; margin-bottom: 30px; visibility: visible; animation-name: fadeInUp;">
+          <div class="latest-pic2" style="height: 230px; background-image: url('/images/services/com-roof-coatings.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="latest-pic-bottom" style="flex: 1; display: flex; flex-direction: column;">
+            <div class="pic-address">Glendale, CA</div>
+            <div class="description-wrap" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+              <div class="pic-description">
+                <h3 style="font-size: 20px;"><a href="#" data-toggle="modal" data-target="#scheduleModal">Historic Tile Replacement</a></h3>
+                <p>Upgraded a 30-year-old tile roof with modern lightweight synthetics while maintaining the classic aesthetic.</p>
+              </div>
+              <div class="pic-mesure">
+                <span style="display: inline-block; width: auto;"><i class="fa fa-shield"></i> Zero Leaks Guaranteed</span>
+              </div>
+            </div>
+          </div>       
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4 col-sm-6 wow fadeInUp" style="display: flex; flex-direction: column; margin-bottom: 30px; visibility: visible; animation-name: fadeInUp;">
+          <div class="latest-pic3" style="height: 230px; background-image: url('/images/services/res-tile-roofing.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="latest-pic-bottom" style="flex: 1; display: flex; flex-direction: column;">
+            <div class="pic-address">Los Angeles, CA</div>
+            <div class="description-wrap" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+              <div class="pic-description">
+                <h3 style="font-size: 20px;"><a href="#" data-toggle="modal" data-target="#scheduleModal">Decking Restoration & Reroof</a></h3>
+                <p>Replaced 12 sheets of rotted plywood before installing a lifetime-rated cool roofing system.</p>
+              </div>
+              <div class="pic-mesure">
+                <span style="display: inline-block; width: auto;"><i class="fa fa-shield"></i> 5-Yr Repair Warranty</span>
+              </div>
+            </div>
+          </div>       
+        </div>
+      </div>
+      
+      <!-- Mobile Carousel -->
+      <div class="row visible-xs-block">
+        <div class="col-md-12">
+          <div id="service-projects-mobile-carousel" class="owl-carousel owl-theme">
+            
+            <div class="item">
+              <div class="latest-property-card" style="display: flex; flex-direction: column; margin-bottom: 10px; background: #fff;">
+                <div class="latest-pic1" style="height: 230px; background-image: url('/images/services/res-slate-shingles.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="latest-pic-bottom" style="flex: 1; display: flex; flex-direction: column; border: 1px solid #eee; border-top: none;">
+                  <div class="pic-address">Burbank, CA</div>
+                  <div class="description-wrap" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="pic-description">
+                      <h3 style="font-size: 20px;"><a href="#" data-toggle="modal" data-target="#scheduleModal">Complete Shingle Tear-Off</a></h3>
+                      <p>Full removal of two layers of old shingles and installation of an architectural roofing system.</p>
+                    </div>
+                    <div class="pic-mesure">
+                      <span style="display: inline-block; width: auto;"><i class="fa fa-shield"></i> 5-Yr Repair Warranty</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="latest-property-card" style="display: flex; flex-direction: column; margin-bottom: 10px; background: #fff;">
+                <div class="latest-pic2" style="height: 230px; background-image: url('/images/services/com-roof-coatings.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="latest-pic-bottom" style="flex: 1; display: flex; flex-direction: column; border: 1px solid #eee; border-top: none;">
+                  <div class="pic-address">Glendale, CA</div>
+                  <div class="description-wrap" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="pic-description">
+                      <h3 style="font-size: 20px;"><a href="#" data-toggle="modal" data-target="#scheduleModal">Historic Tile Replacement</a></h3>
+                      <p>Upgraded a 30-year-old tile roof with modern lightweight synthetics while maintaining the classic aesthetic.</p>
+                    </div>
+                    <div class="pic-mesure">
+                      <span style="display: inline-block; width: auto;"><i class="fa fa-shield"></i> Zero Leaks Guaranteed</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="latest-property-card" style="display: flex; flex-direction: column; margin-bottom: 10px; background: #fff;">
+                <div class="latest-pic3" style="height: 230px; background-image: url('/images/services/res-tile-roofing.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="latest-pic-bottom" style="flex: 1; display: flex; flex-direction: column; border: 1px solid #eee; border-top: none;">
+                  <div class="pic-address">Los Angeles, CA</div>
+                  <div class="description-wrap" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="pic-description">
+                      <h3 style="font-size: 20px;"><a href="#" data-toggle="modal" data-target="#scheduleModal">Decking Restoration & Reroof</a></h3>
+                      <p>Replaced 12 sheets of rotted plywood before installing a lifetime-rated cool roofing system.</p>
+                    </div>
+                    <div class="pic-mesure">
+                      <span style="display: inline-block; width: auto;"><i class="fa fa-shield"></i> 5-Yr Repair Warranty</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Testimonials />
+  <LeadSection />
+
+  <Footer />
+  <AppointmentModal />
+
+  <style is:global>
+    /* Desktop Hover Effects */
+    .sidebar-widget ul li a:hover { color: #4cb050 !important; }
+    .sidebar-widget ul li a:hover i { color: #4cb050 !important; }
+    
+    /* FAQ Interaction Fix */
+    .panel-heading a[aria-expanded="true"] i::before {
+      content: "\f107"; /* Angle down */
+    }
+    .panel-heading a[aria-expanded="false"] i::before {
+      content: "\f105"; /* Angle right */
+    }
+
+    /* Mobile specific adjustments */
+    @media (max-width: 767px) {
+      .page-title-banner {
+        padding: 60px 0 !important;
+      }
+      .page-title-banner h1 {
+        font-size: 32px !important;
+      }
+      .service-details-section {
+        padding: 50px 0 !important;
+      }
+      .service-details-section h2 {
+        font-size: 26px !important;
+      }
+      .service-details-section h3 {
+        font-size: 22px !important;
+        margin-top: 40px !important;
+      }
+      .right-sidebar-mobile {
+        margin-top: 50px !important;
+      }
+    }
+    
+    /* Mobile Carousel global classes matching LatestProjects */
+    #service-projects-mobile-carousel .item {
+      width: 100%;
+      padding: 5px;
+    }
+    #service-projects-mobile-carousel .owl-controls {
+      display: block !important;
+      margin: 15px 0 0 0 !important;
+    }
+    #service-projects-mobile-carousel .owl-pagination {
+      display: block !important;
+      text-align: center;
+      padding: 0 !important;
+    }
+    #service-projects-mobile-carousel .owl-page {
+      display: inline-block !important;
+      padding: 0 !important;
+    }
+    #service-projects-mobile-carousel .owl-page span {
+      width: 12px;
+      height: 12px;
+      margin: 5px 6px;
+      background: #D6D6D6 !important;
+      display: block;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+    #service-projects-mobile-carousel .owl-page.active span {
+      background: #2384EC !important;
+      transform: scale(1.2);
+    }
+  </style>
+
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize FAQ Icons switch
+      var headers = document.querySelectorAll('.panel-heading a');
+      headers.forEach(function(header) {
+        header.addEventListener('click', function() {
+          setTimeout(function() {
+            var icon = header.querySelector('i');
+            if(header.getAttribute('aria-expanded') === 'true') {
+              icon.classList.remove('fa-angle-right');
+              icon.classList.add('fa-angle-down');
+            } else {
+              icon.classList.remove('fa-angle-down');
+              icon.classList.add('fa-angle-right');
+            }
+          }, 50);
+        });
+      });
+
+      // Initialize embedded mobile carousel
+      var initServiceProjects = setInterval(function() {
+        if (window.jQuery && window.jQuery.fn.owlCarousel) {
+          clearInterval(initServiceProjects);
+          jQuery('#service-projects-mobile-carousel').owlCarousel({
+            singleItem: true,
+            autoPlay: 4500,
+            stopOnHover: true,
+            pagination: true,
+            navigation: false
+          });
+        }
+      }, 200);
+    });
+  </script>
+</Layout>
+
+
+
+

@@ -1,0 +1,156 @@
+---
+// Testimonials Carousel Component (Owl Carousel in EcoReal)
+---
+
+<section class="testimonials" id="client-reviews"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center"> 
+        <div class="testimonials-title">
+          <h1 class="section-heading wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0s">
+            Verified <span>Reviews</span>
+          </h1>
+          <p class="section-desc wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.1s">
+            Hear directly from Southern California homeowners, commercial building managers, and HOA communities who trust Roofinity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.trust-marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 10px 0 50px 0;
+  position: relative;
+}
+.trust-marquee-inner {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marqueeLoop 30s linear infinite;
+}
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 800;
+  color: #a0a0a0;
+  margin: 0 40px;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.5px;
+}
+.trust-badge i {
+  font-size: 26px;
+  margin-right: 8px;
+}
+@keyframes marqueeLoop {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>
+
+<div class="trust-marquee">
+  <div class="trust-marquee-inner">
+    <!-- First Set -->
+    <span class="trust-badge"><i class="fa fa-google"></i> GOOGLE REVIEWS</span>
+    <span class="trust-badge"><i class="fa fa-yelp"></i> YELP</span>
+    <span class="trust-badge">BBB A+ ACCREDITED</span>
+    <span class="trust-badge"><i class="fa fa-houzz"></i> HOUZZ</span>
+    <span class="trust-badge">HOME ADVISOR</span>
+    <span class="trust-badge">BUILDZOOM</span>
+    <!-- Duplicate Set for Seamless Loop -->
+    <span class="trust-badge"><i class="fa fa-google"></i> GOOGLE REVIEWS</span>
+    <span class="trust-badge"><i class="fa fa-yelp"></i> YELP</span>
+    <span class="trust-badge">BBB A+ ACCREDITED</span>
+    <span class="trust-badge"><i class="fa fa-houzz"></i> HOUZZ</span>
+    <span class="trust-badge">HOME ADVISOR</span>
+    <span class="trust-badge">BUILDZOOM</span>
+  </div>
+</div>
+<div class="container-fluid padding-fix" style="margin-bottom: 60px;">
+  <div class="row">
+    <div id="testimonial-carousel" class="testimonial-carousel wow fadeInUp owl-carousel owl-theme" data-wow-delay="0.2s">
+      
+      <!-- Review 1 -->
+      <div class="col-md-4 width-fix">
+        <div class="testimonial-comment" style="background: #FFFFFF; padding: 25px; border-radius: 6px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border-top: 3px solid var(--rf-primary-blue);">
+          <div style="color: var(--rf-primary-amber); margin-bottom: 10px;">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+          <p style="font-size: 14.5px; line-height: 1.6; color: #555555;">
+            "Roofinity replaced our 30-year-old shingle roof in just three days. Spotless magnet cleanup for nails, completely transparent pricing, and the GAF 50-year warranty gives our family total peace of mind."
+          </p>
+        </div>
+        <div class="testimonial-author clearfix" style="margin-top: 15px; display: flex; align-items: center;">
+          <img src="/images/client-1.jpg" alt="David R." class="img-circle" style="width: 55px; height: 55px; object-fit: cover; margin-right: 12px; border: 2px solid var(--rf-primary-blue);">
+          <p style="margin: 0;">
+            <span class="tauthor-name" style="font-weight: 700; color: #333333; display: block; font-size: 15px;">David Richardson</span>
+            <span class="tauthor-role" style="color: #888888; font-size: 12.5px;">Homeowner — Pasadena, CA</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="col-md-4 width-fix">
+        <div class="testimonial-comment" style="background: #FFFFFF; padding: 25px; border-radius: 6px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border-top: 3px solid var(--rf-secondary-coral);">
+          <div style="color: var(--rf-primary-amber); margin-bottom: 10px;">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+          <p style="font-size: 14.5px; line-height: 1.6; color: #555555;">
+            "We had persistent leaks on a 25,000 sq ft flat roof. Roofinity applied a seamless silicone coating system that stopped all leaks and saved us over $60k compared to a full tear-off."
+          </p>
+        </div>
+        <div class="testimonial-author clearfix" style="margin-top: 15px; display: flex; align-items: center;">
+          <img src="/images/client-2.jpg" alt="Sarah Jenkins" class="img-circle" style="width: 55px; height: 55px; object-fit: cover; margin-right: 12px; border: 2px solid var(--rf-secondary-coral);">
+          <p style="margin: 0;">
+            <span class="tauthor-name" style="font-weight: 700; color: #333333; display: block; font-size: 15px;">Sarah Jenkins</span>
+            <span class="tauthor-role" style="color: #888888; font-size: 12.5px;">Facility Director — Glendale, CA</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="col-md-4 width-fix">
+        <div class="testimonial-comment" style="background: #FFFFFF; padding: 25px; border-radius: 6px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border-top: 3px solid var(--rf-primary-amber);">
+          <div style="color: var(--rf-primary-amber); margin-bottom: 10px;">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+          <p style="font-size: 14.5px; line-height: 1.6; color: #555555;">
+            "Our historic Spanish tile roof required specialized craftsmanship. Roofinity preserved the original tiles while completely replacing the dry-rotted underlayment. Absolutely top tier."
+          </p>
+        </div>
+        <div class="testimonial-author clearfix" style="margin-top: 15px; display: flex; align-items: center;">
+          <img src="/images/client-3.jpg" alt="Michael Torres" class="img-circle" style="width: 55px; height: 55px; object-fit: cover; margin-right: 12px; border: 2px solid var(--rf-primary-amber);">
+          <p style="margin: 0;">
+            <span class="tauthor-name" style="font-weight: 700; color: #333333; display: block; font-size: 15px;">Michael Torres</span>
+            <span class="tauthor-role" style="color: #888888; font-size: 12.5px;">Estate Owner — Beverly Hills, CA</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Review 4 -->
+      <div class="col-md-4 width-fix">
+        <div class="testimonial-comment" style="background: #FFFFFF; padding: 25px; border-radius: 6px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border-top: 3px solid var(--rf-secondary-mint);">
+          <div style="color: var(--rf-primary-amber); margin-bottom: 10px;">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+          <p style="font-size: 14.5px; line-height: 1.6; color: #555555;">
+            "Prompt, OSHA-compliant, and communicative from day one. Their 4K drone inspection report made our storm insurance claim approval painless and fast."
+          </p>
+        </div>
+        <div class="testimonial-author clearfix" style="margin-top: 15px; display: flex; align-items: center;">
+          <img src="/images/client-1.jpg" alt="Robert Sterling" class="img-circle" style="width: 55px; height: 55px; object-fit: cover; margin-right: 12px; border: 2px solid var(--rf-secondary-mint);">
+          <p style="margin: 0;">
+            <span class="tauthor-name" style="font-weight: 700; color: #333333; display: block; font-size: 15px;">Robert Sterling</span>
+            <span class="tauthor-role" style="color: #888888; font-size: 12.5px;">Property Manager — Downtown LA</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+---
+// Master Index Page for Roofinity
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Navbar from '../components/Navbar.astro';
+import HeroCarousel from '../components/HeroCarousel.astro';
+import AboutSection from '../components/AboutSection.astro';
+import ServicesGrid from '../components/ServicesGrid.astro';
+import StatsCounter from '../components/StatsCounter.astro';
+import RoofingDetails from '../components/RoofingDetails.astro';
+import PhotoGallery from '../components/PhotoGallery.astro';
+import ServiceAreas from '../components/ServiceAreas.astro';
+import GoogleMap from '../components/GoogleMap.astro';
+import LatestProjects from '../components/LatestProjects.astro';
+import LeadSection from '../components/LeadSection.astro';
+import CtaBanner from '../components/CtaBanner.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Footer from '../components/Footer.astro';
+import AppointmentModal from '../components/AppointmentModal.astro';
+---
+
+<Layout 
+  title="Roofinity | Leading Residential & Commercial Roofing Solutions"
+  description="Roofinity delivers master-certified roof replacement, repair, architectural shingles, standing seam metal, authentic Spanish tile, and commercial flat roof systems."
+>
+  <!-- 1. Header with contacts, license and official logo -->
+  <Header />
+
+  <!-- 2. Navbar with 16 services in dropdowns and inspection CTA -->
+  <Navbar />
+
+  <main>
+    <!-- 3. Intro Carousel with high-impact roofing systems & specs -->
+    <HeroCarousel />
+
+    <!-- 4. About Roofinity -->
+    <AboutSection />
+
+    <!-- 5. 4 Core Roofing Pillars Showcase -->
+    <ServicesGrid />
+
+    <!-- 6. Key Performance Metrics & Statistics -->
+    <StatsCounter />
+
+    <!-- 7. Engineering Standards & Material Tabbed Specifications -->
+    <RoofingDetails />
+
+    <!-- 8. Filterable Project Gallery with Lightbox -->
+    <PhotoGallery />
+
+    <!-- 9. Coverage Sectors & Specialized Divisions -->
+    <ServiceAreas />
+
+    <!-- 10. Operations Map & Headquarters Hub -->
+    <GoogleMap />
+
+    <!-- 11. Recent Project Installations & Case Studies -->
+    <LatestProjects />
+
+<!-- 13. Urgent Call-To-Action Banner -->
+    <CtaBanner />
+
+    <!-- 15. Verified Client Reviews Carousel -->
+    <Testimonials />
+  </main>
+
+    <!-- 12. Lead Specialist & Free Estimate Request Section -->
+    <LeadSection />
+
+  <!-- 16. Corporate Footer with legal disclaimers & newsletter -->
+  <Footer />
+
+  <!-- 17. Free Inspection Booking Modal -->
+  <AppointmentModal />
+</Layout>
+
+
+

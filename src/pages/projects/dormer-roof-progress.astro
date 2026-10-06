@@ -1,0 +1,101 @@
+﻿---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import AppointmentModal from '../../components/AppointmentModal.astro';
+import LeadSection from '../../components/LeadSection.astro';
+---
+
+<Layout title="Dormer Roof Progress | Roofinity Projects" description="View the details of our recent residential shingle roof replacement in Pasadena, CA.">
+  <Header />
+  <Navbar />
+
+  <!-- Page Title Banner -->
+  <section class="page-title-banner" style="background-image: url('/images/services/com-pvc-roofing.jpg'); position: relative; padding: 120px 0; background-size: cover; background-position: center; margin-top: 0;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.65);"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="section-heading" style="color: #fff !important;">Dormer <span>Roof Progress</span></h1>
+          <ol class="breadcrumb" style="background: transparent; padding: 0; margin: 0; display: inline-block;">
+            <li><a href="/" style="color: var(--rf-primary-amber); font-weight: 600;">Home</a></li>
+            <li><a href="/gallery" style="color: var(--rf-primary-amber); font-weight: 600;">Our Work</a></li>
+            <li class="active" style="color: #fff;">Dormer Roof</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Details Area (Adapted from Brenda Template) -->
+  <section class="project-section" style="padding: 80px 0; background: #fff;">
+      <div class="container">
+          <div class="row">
+              <div class="col-12" style="margin-bottom: 40px;">
+                  <div class="project-image">
+                      <img src="/images/services/com-pvc-roofing.jpg" class="img-responsive" alt="Dormer Roof Progress" style="width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                  </div>
+              </div>
+              
+              <div class="col-lg-4 col-md-4 col-sm-12" style="margin-bottom: 30px;">
+                  <div class="project-information" style="background: #f9f9f9; padding: 35px 30px; border-top: 4px solid var(--rf-primary-blue); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                      <h4 style="font-weight: 800; font-size: 22px; color: var(--rf-primary-charcoal); margin-top: 0; margin-bottom: 20px; text-transform: uppercase;">Project Info</h4>
+                      <ul style="list-style: none; padding: 0; margin: 0; font-size: 15px; color: #555; line-height: 1.8;">
+                          <li style="border-bottom: 1px solid #eaeaea; padding-bottom: 12px; margin-bottom: 12px;"><strong style="color: var(--rf-primary-charcoal);">Client:</strong> Historic Renovation</li>
+                          <li style="border-bottom: 1px solid #eaeaea; padding-bottom: 12px; margin-bottom: 12px;"><strong style="color: var(--rf-primary-charcoal);">Location:</strong> Riverside, CA</li>
+                          <li style="border-bottom: 1px solid #eaeaea; padding-bottom: 12px; margin-bottom: 12px;"><strong style="color: var(--rf-primary-charcoal);">Size:</strong> 4,100 sq. ft.</li>
+                          <li style="border-bottom: 1px solid #eaeaea; padding-bottom: 12px; margin-bottom: 12px;"><strong style="color: var(--rf-primary-charcoal);">Year:</strong> 2026</li>
+                          <li style="border-bottom: 1px solid #eaeaea; padding-bottom: 12px; margin-bottom: 12px;"><strong style="color: var(--rf-primary-charcoal);">Material:</strong> Architectural Shingles</li>
+                          <li style="padding-bottom: 0; margin-bottom: 0;"><strong style="color: var(--rf-primary-charcoal);">Style:</strong> Pitched / Dormers</li>
+                      </ul>
+                  </div>
+              </div>
+              
+              <div class="col-lg-8 col-md-8 col-sm-12" style="margin-bottom: 30px;">
+                  <div class="project-details" style="padding-left: 15px;">
+                      <h2 class="section-heading text-left" style=" padding-bottom: 20px; margin-top: 0;">Complete <span>Transformation</span></h2>
+                      <p style="font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 20px;">
+                          This residential project in Riverside required a complete tear-off of the existing, compromised roofing system. The homeowner had been experiencing minor leaks during heavy rain and wanted a permanent, high-performance solution. We began by removing two layers of old asphalt shingles down to the bare wood decking to ensure structural integrity.
+                      </p>
+                      <p style="font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 20px;">
+                          Our factory-certified crews replaced 15 sheets of damaged plywood before installing a premium synthetic underlayment and ice-and-water shields in all valleys and penetrations. The main surface was covered with GAF Timberline HDZ architectural shingles, known for their striking dimension and industry-leading wind resistance.
+                      </p>
+                      <p style="font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 0;">
+                          The project was completed in just under three days, minimizing disruption to the household. The final result is a beautiful, durable pitched roof that dramatically increases the home's curb appeal and is backed by a 50-Year System Plus warranty, providing absolute peace of mind for decades to come.
+                      </p>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Project Gallery Thumbnails -->
+          <div class="row" style="margin-top: 30px;">
+              <div class="col-md-12">
+                  <h3 style="font-weight: 800; font-size: 24px; color: var(--rf-primary-charcoal); margin-bottom: 25px; text-transform: uppercase;">Gallery <span>Views</span></h3>
+              </div>
+              <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                  <a href="/images/services/res-asphalt-shingles.jpg" target="_blank" style="display: block; overflow: hidden;">
+                      <img src="/images/services/res-asphalt-shingles.jpg" class="img-responsive" alt="Aerial View 1" style="width: 100%; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                  </a>
+              </div>
+              <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                  <a href="/images/services/res-roof-repair.jpg" target="_blank" style="display: block; overflow: hidden;">
+                      <img src="/images/services/res-roof-repair.jpg" class="img-responsive" alt="Work in progress" style="width: 100%; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                  </a>
+              </div>
+              <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                  <a href="/images/services/res-roof-replacement.jpg" target="_blank" style="display: block; overflow: hidden;">
+                      <img src="/images/services/res-roof-replacement.jpg" class="img-responsive" alt="Finished details" style="width: 100%; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <LeadSection />
+
+  <Footer />
+  <AppointmentModal />
+</Layout>
+
+

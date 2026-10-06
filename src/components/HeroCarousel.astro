@@ -1,0 +1,112 @@
+﻿---
+// Ultra-Modern Hero Carousel for Roofinity (No Text Overlays)
+---
+
+<section class="intro-carousel">
+    <div id="intro-carousel-inner" class="carousel slide" data-ride="carousel" data-interval="5000">
+      
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#intro-carousel-inner" data-slide-to="0" class="active"></li>
+        <li data-target="#intro-carousel-inner" data-slide-to="1"></li>
+        <li data-target="#intro-carousel-inner" data-slide-to="2"></li>
+        <li data-target="#intro-carousel-inner" data-slide-to="3"></li>
+        <li data-target="#intro-carousel-inner" data-slide-to="4"></li>
+      </ol>
+
+      <!-- Static Text Overlay -->
+      <div class="hero-static-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 10; display: flex; align-items: center; pointer-events: none; background: rgba(0,0,0,0.4);">
+        <div class="container" style="pointer-events: auto;">
+          <div class="row">
+            <div class="col-md-8 col-sm-10" style="padding-top: 50px;">
+              <h5 style="color: var(--rf-primary-amber); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; font-size: 14px;">Roofing & Gutters / Greater Los Angeles</h5>
+              <h1 class="section-heading text-left" style="color: #fff !important; font-size: 56px; line-height: 1.2; margin-top: 0; margin-bottom: 25px;">Built to protect. <br><span>Designed to last.</span></h1>
+              <p style="color: #f1f1f1; font-size: 20px; font-weight: 500; margin-bottom: 40px; line-height: 1.6;">For the home you love.<br>For the business you’re building.</p>
+              
+              <div class="hero-actions" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="/contact" class="btn" style="background: var(--rf-primary-green); color: #fff; padding: 16px 35px; font-weight: 700; border-radius: 0; text-transform: uppercase; font-size: 15px; border: none; transition: background 0.3s;">Start your project <i class="fa fa-arrow-right" style="margin-left: 8px;"></i></a>
+                <a href="/gallery" class="btn" style="background: transparent; color: #fff; padding: 14px 35px; font-weight: 700; border-radius: 0; text-transform: uppercase; font-size: 15px; border: 2px solid #fff; transition: all 0.3s;">Explore our work <i class="fa fa-arrow-right" style="margin-left: 8px;"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-inner" role="listbox">
+        
+        <!-- Slide 1: Modern Luxury Architectural Roof -->
+        <div class="item active">
+          <img 
+            src="/images/hero/hero-slide-1.jpg" 
+            alt="Modern Luxury Home with Architectural Roof" 
+            style="width: 100%; height: 680px; object-fit: cover; object-position: center;"
+          />
+        </div>
+
+        <!-- Slide 2: Contemporary Standing Seam Metal Roof -->
+        <div class="item">
+          <img 
+            src="/images/hero/hero-slide-2.jpg" 
+            alt="Modern House with Standing Seam Metal Roof" 
+            style="width: 100%; height: 680px; object-fit: cover; object-position: center;"
+          />
+        </div>
+
+        <!-- Slide 3: Modern Charcoal Roof Design -->
+        <div class="item">
+          <img 
+            src="/images/hero/hero-slide-3.jpg" 
+            alt="Modern Home with Charcoal Designer Roof" 
+            style="width: 100%; height: 680px; object-fit: cover; object-position: center;"
+          />
+        </div>
+
+        <!-- Slide 4: Ultra-Modern White Cool Roof -->
+        <div class="item">
+          <img 
+            src="/images/hero/hero-slide-4.jpg" 
+            alt="Modern House with High Reflective Cool Roof" 
+            style="width: 100%; height: 680px; object-fit: cover; object-position: center;"
+          />
+        </div>
+
+        <!-- Slide 5: Contemporary Luxury Estate Roofing -->
+        <div class="item">
+          <img 
+            src="/images/hero/hero-slide-5.jpg" 
+            alt="Contemporary Luxury Home Rooflines" 
+            style="width: 100%; height: 680px; object-fit: cover; object-position: center;"
+          />
+        </div>
+
+      </div>
+
+      <!-- Left and Right Controls -->
+      <a class="left carousel-control" href="#intro-carousel-inner" data-slide="prev" aria-label="Previous">
+        <span><i class="fa fa-angle-left"></i></span>
+      </a>
+      <a class="right carousel-control" href="#intro-carousel-inner" data-slide="next" aria-label="Next">
+        <span><i class="fa fa-angle-right"></i></span>
+      </a>
+    </div>
+</section>
+
+<style>
+  .hero-actions .btn:hover {
+    background: var(--rf-primary-blue) !important;
+    color: #fff !important;
+    border-color: var(--rf-primary-blue) !important;
+  }
+  
+  @media (max-width: 767px) {
+    .hero-static-overlay h1 {
+      font-size: 38px !important;
+    }
+    .hero-static-overlay p {
+      font-size: 16px !important;
+    }
+    .carousel-inner .item img {
+      height: 550px !important;
+    }
+  }
+</style>

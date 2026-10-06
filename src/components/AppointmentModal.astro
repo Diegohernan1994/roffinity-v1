@@ -1,0 +1,87 @@
+﻿---
+// Modal Appointment / Free Inspection Form
+---
+
+<div id="scheduleModal" class="modal fade" role="dialog" tabindex="-1" aria-labelledby="scheduleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background: var(--rf-primary-blue); color: #FFFFFF;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #FFFFFF; opacity: 0.9;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="scheduleModalLabel" style="font-weight: 700;">
+          <i class="fa fa-calendar-check-o" style="margin-right: 8px;"></i> Schedule Free Roof Inspection
+        </h4>
+      </div>
+      <div class="modal-body" style="padding: 25px;">
+        <div id="contact">  
+          <p style="color: #666666; font-size: 13.5px; margin-bottom: 20px;">
+            Fill out your details below and a certified Roofinity master inspector will contact you within 2 business hours to confirm your aerial drone survey or on-site estimate.
+          </p>
+          <form id="appointment-form" class="lead-form-proxy">
+            <!-- Honeypot field -->
+            <input type="text" name="website_url" style="display: none;" tabindex="-1" autocomplete="off">
+            
+            <div class="form-group">
+              <label for="modal-name" style="font-size: 13px; font-weight: 600; color: #444;">Full Name *</label>
+              <input type="text" class="form-control" placeholder="e.g. John Smith" name="name" id="modal-name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="modal-phone" style="font-size: 13px; font-weight: 600; color: #444;">Phone Number *</label>
+              <input type="tel" class="form-control" placeholder="e.g. (951) 300-3512" name="phone" id="modal-phone" required>
+            </div>
+
+            <div class="form-group">
+              <label for="modal-email" style="font-size: 13px; font-weight: 600; color: #444;">Email Address *</label>
+              <input type="email" class="form-control" placeholder="e.g. john@example.com" name="email" id="modal-email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="modal-service" style="font-size: 13px; font-weight: 600; color: #444;">Service Needed *</label>
+              <select name="service" id="modal-service" class="form-control">
+                <optgroup label="Residential Roofing">
+                  <option value="Roof Replacement">Roof Replacement</option>
+                  <option value="Roof Repair">Roof Repair</option>
+                  <option value="Asphalt Shingles">Asphalt Shingles</option>
+                  <option value="Tile Roofing">Tile Roofing</option>
+                  <option value="Metal Roofing">Metal Roofing</option>
+                  <option value="Corrugated Roofing">Corrugated Roofing</option>
+                  <option value="Cool Roofing">Cool Roofing</option>
+                  <option value="Fiber Cement Roofing">Fiber Cement Roofing</option>
+                  <option value="Slate Shingles">Slate Shingles</option>
+                </optgroup>
+                <optgroup label="Commercial Roofing">
+                  <option value="Commercial Metal Roofing">Commercial Metal Roofing</option>
+                  <option value="Roof Coatings">Roof Coatings</option>
+                  <option value="Acrylic Roof Coating">Acrylic Roof Coating</option>
+                  <option value="PVC Roofing">PVC Roofing</option>
+                  <option value="EPDM Roofing">EPDM Roofing</option>
+                  <option value="Liquid-Applied Roofing">Liquid-Applied Roofing</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="modal-address" style="font-size: 13px; font-weight: 600; color: #444;">Property Address / City</label>
+              <input type="text" class="form-control" placeholder="e.g. 123 Main St, Pasadena, CA" name="address" id="modal-address">
+            </div>
+
+            <div class="form-group">
+              <label for="modal-message" style="font-size: 13px; font-weight: 600; color: #444;">Project Notes (Optional)</label>
+              <textarea name="message" class="form-control" placeholder="Briefly describe your roof condition, leak issues, or project timing..." id="modal-message" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="background: var(--rf-secondary-coral); border: none; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; padding: 12px; font-size: 14px; width: 100%; box-shadow: 0 4px 15px rgba(252, 84, 41, 0.3);">
+              <i class="fa fa-paper-plane" style="margin-right: 6px;"></i> Confirm Free Inspection Request
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer" style="background: #F8F9FA; text-align: center; font-size: 12px; color: #777;">
+        <i class="fa fa-lock" style="margin-right: 4px; color: var(--rf-primary-blue);"></i> 100% Confidential. No sales pressure. CSLB Licensed & Insured.
+      </div>
+    </div>
+  </div>
+</div>
+

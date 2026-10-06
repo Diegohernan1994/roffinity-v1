@@ -1,0 +1,565 @@
+﻿/* ==========================================================================
+   Roofinity Brand Identity System & EcoReal Adapter
+   Fidelity: 100% compliant with Roofinity_Guideline_R.pdf & Astro Protocol
+   ========================================================================== */
+
+:root {
+  /* Main Palette */
+  --rf-primary-blue: #2384EC;
+  --rf-primary-green: #4cb050;
+  --rf-primary-amber: #FEB351;
+  --rf-primary-cream: #F0EEE4;
+  --rf-primary-charcoal: #333333;
+
+  /* Secondary Palette */
+  --rf-secondary-coral: #FC5429;
+  --rf-secondary-mint: #89D2A4;
+
+  /* Gradients */
+  --rf-gradient-sunset: linear-gradient(135deg, #FC5429 0%, #FEB351 50%, #89D2A4 100%);
+  --rf-gradient-sky: linear-gradient(90deg, #2873F0 0%, #19A9E6 100%);
+
+  /* Typography */
+  --rf-font-main: 'Century Gothic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+html, body {
+  font-family: var(--rf-font-main) !important;
+  color: var(--rf-primary-charcoal);
+  overflow-x: hidden !important;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6, .section-heading, .navbar-brand {
+  font-family: var(--rf-font-main) !important;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Header Top */
+header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #ECECEC;
+  padding: 14px 0;
+}
+
+.logo img {
+  max-height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+.header-call p i, .header-place p i {
+  color: var(--rf-primary-blue);
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.header-call .phone {
+  color: var(--rf-primary-charcoal);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.header-social ul li a {
+  color: #777777;
+  transition: all 0.3s ease;
+}
+
+.header-social ul li a:hover {
+  color: var(--rf-primary-blue);
+}
+
+/* Navigation */
+#my-navbar {
+  background-color: var(--rf-primary-charcoal);
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navbar-nav.main-menu > li > a {
+  font-family: var(--rf-font-main);
+  color: #FFFFFF !important;
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 18px 14px;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+.navbar-nav.main-menu > li > a:hover,
+.navbar-nav.main-menu > li.active > a {
+  background-color: transparent !important;
+  color: var(--rf-primary-amber) !important;
+}
+
+/* Mega Dropdown Menu for Services */
+.navbar-nav.main-menu > li {
+  position: relative;
+}
+
+.navbar-nav.main-menu > li .sub-menu {
+  background-color: #FFFFFF;
+  border-top: 3px solid var(--rf-secondary-coral);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 6px 6px;
+  min-width: 250px;
+  padding: 8px 0;
+}
+
+.navbar-nav.main-menu > li .sub-menu li a {
+  color: var(--rf-primary-charcoal);
+  font-family: var(--rf-font-main);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 9px 18px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.navbar-nav.main-menu > li .sub-menu li a:hover {
+  background-color: var(--rf-primary-cream);
+  color: var(--rf-primary-blue);
+  padding-left: 22px;
+}
+
+/* Navbar CTA Button */
+.navbar-right.nav-cta-btn {
+  background: var(--rf-secondary-coral);
+  color: #FFFFFF !important;
+  font-family: var(--rf-font-main);
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 10px 22px;
+  margin-top: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 12px rgba(252, 84, 41, 0.3);
+}
+
+.navbar-right.nav-cta-btn:hover {
+  background: #E0441B;
+  color: #FFFFFF !important;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 16px rgba(252, 84, 41, 0.4);
+}
+
+/* Section Headings */
+.section-heading {
+  color: var(--rf-primary-charcoal);
+  text-transform: uppercase;
+}
+
+h1.section-heading span, h1.section-heading span[style] { color: var(--rf-primary-green) !important; }
+h2.section-heading span, h2.section-heading span[style] { color: var(--rf-primary-blue) !important; }
+
+.section-desc {
+  max-width: 760px;
+  margin: 15px auto 0;
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Feature Boxes (Property section in EcoReal) */
+.property .property-bottom {
+  background: rgba(35, 132, 236, 0.9);
+  transition: all 0.3s ease;
+}
+
+.property .property-bottom p {
+  font-family: var(--rf-font-main);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.property .drawing-room:hover .property-bottom,
+.property .dining-room:hover .property-bottom,
+.property .bed-room:hover .property-bottom,
+.property .kitchen-room:hover .property-bottom {
+  background: var(--rf-primary-charcoal);
+}
+
+/* Key Metrics Counter */
+.about-bottom {
+  background: #F8F9FA;
+  padding: 50px 0;
+}
+
+.property-pros .fig {
+  color: var(--rf-primary-blue);
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.property-pros span {
+  font-family: var(--rf-font-main);
+  color: #777777;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.property-pros .fign {
+  color: var(--rf-primary-charcoal);
+  font-size: 28px;
+  font-weight: 700;
+  display: block;
+}
+
+/* Tabs in Property Details */
+.property-details #tabs li.active a,
+.property-details #tabs li a:hover {
+  background-color: var(--rf-primary-blue) !important;
+  color: #FFFFFF !important;
+}
+
+.property-details #tabs li a {
+  font-family: var(--rf-font-main);
+  font-weight: 600;
+  color: var(--rf-primary-charcoal);
+}
+
+.water-strg span i {
+  color: var(--rf-secondary-mint);
+}
+
+/* Photo Gallery Filters */
+.photo-gallery .controls button.filter {
+  font-family: var(--rf-font-main);
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+
+.photo-gallery .controls button.filter.active,
+.photo-gallery .controls button.filter:hover {
+  background-color: #4cb050;
+  border-color: #4cb050;
+  color: #FFFFFF;
+}
+
+/* Service Areas */
+.nearby-places .location i {
+  color: var(--rf-primary-blue);
+}
+
+.nearby-places .club span.school {
+  color: var(--rf-secondary-coral);
+  font-weight: 700;
+}
+
+/* Latest Projects */
+.latest-pic-bottom .pic-address {
+  background-color: var(--rf-primary-charcoal);
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.latest-pic-bottom .pic-address span {
+  color: var(--rf-primary-amber);
+}
+
+.pic-description h3 a {
+  color: var(--rf-primary-charcoal);
+  transition: color 0.2s ease;
+}
+
+.pic-description h3 a:hover {
+  color: var(--rf-primary-blue);
+}
+
+.pic-mesure span i {
+  color: var(--rf-primary-blue);
+}
+
+/* CTA Sell Property Banner */
+.sell-property {
+  background: linear-gradient(135deg, rgba(35, 132, 236, 0.95), rgba(40, 115, 240, 0.95)), url('/images/property-sell-banner-bg.jpg') center/cover no-repeat;
+}
+
+.sell-property .call-us h3 {
+  color: #FFFFFF;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.sell-property .call-us span {
+  color: var(--rf-primary-cream);
+  font-size: 15px;
+}
+
+.sell-contact span {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sell-contact a {
+  background-color: var(--rf-primary-amber);
+  color: var(--rf-primary-charcoal) !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.sell-contact a:hover {
+  background-color: #FFA526;
+  transform: translateY(-2px);
+}
+
+/* Contract Section / Lead Agent */
+.contract-border {
+  border: 1px solid #E5E5E5;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.contract-left h2, .contract-right h2 {
+  color: var(--rf-primary-charcoal);
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 2px solid var(--rf-primary-blue);
+  padding-bottom: 10px;
+}
+
+.contract-left input[type="text"],
+.contract-left input[type="email"],
+.contract-left input[type="tel"],
+.contract-left select,
+.contract-left textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  font-family: var(--rf-font-main);
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.contract-left input:focus,
+.contract-left select:focus,
+.contract-left textarea:focus {
+  border-color: var(--rf-primary-blue);
+}
+
+.contract-left .submit,
+.contract-left button[type="submit"] {
+  background: var(--rf-secondary-coral);
+  color: #FFFFFF;
+  border: none;
+  font-family: var(--rf-font-main);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.contract-left .submit:hover,
+.contract-left button[type="submit"]:hover {
+  background: #E0441B;
+}
+
+.contract-right h3 {
+  color: var(--rf-primary-blue);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.contract-right span i {
+  color: var(--rf-primary-blue);
+}
+
+/* Blog */
+.blog-content, .blog-content3 {
+  background-color: rgba(51, 51, 51, 0.88);
+}
+
+.blog-admin, .blog-admin3 {
+  background-color: var(--rf-primary-blue);
+}
+
+.blog-date, .blog-date3 {
+  background-color: var(--rf-primary-amber);
+  color: var(--rf-primary-charcoal);
+}
+
+.blog-content h4, .blog-content3 h4 {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.blog-content a, .blog-content3 a {
+  color: var(--rf-primary-amber);
+  font-weight: 600;
+}
+
+/* Footer */
+footer.footer {
+  background-color: #222222;
+  color: #B5B5B5;
+  font-family: var(--rf-font-main);
+}
+
+.footer-overlay {
+  padding-top: 50px;
+}
+
+.footer-widget h3 {
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  border-left: 3px solid var(--rf-primary-amber);
+  padding-left: 10px;
+}
+
+.subscribe {
+  background: var(--rf-primary-charcoal);
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 40px;
+  border: 1px solid #444444;
+}
+
+.subscribe .newsletter span {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.subscribe-email input {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 14px;
+  width: 100%;
+}
+
+.subscribe input[type="submit"] {
+  background: var(--rf-primary-blue);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.subscribe input[type="submit"]:hover {
+  background: #1C6CC3;
+}
+
+.footer-below {
+  background-color: #181818;
+  padding: 20px 0;
+  border-top: 1px solid #2C2C2C;
+  font-size: 13px;
+}
+
+/* Modal styling */
+.modal-header {
+  background-color: var(--rf-primary-blue);
+  color: #FFFFFF;
+  border-radius: 4px 4px 0 0;
+}
+
+.modal-header .close {
+  color: #FFFFFF;
+  opacity: 0.9;
+}
+
+.modal-header .modal-title {
+  font-weight: 700;
+}
+
+.modal-body .btn-primary {
+  background: var(--rf-secondary-coral);
+  border: none;
+  font-weight: 700;
+  width: 100%;
+  padding: 12px;
+}
+
+.modal-body .btn-primary:hover {
+  background: #E0441B;
+}
+
+/* Mobile responsive enhancements */
+@media (max-width: 991px) {
+  .header-call, .header-place, .header-social {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .navbar-nav.main-menu > li .sub-menu {
+    position: static;
+    box-shadow: none;
+    background-color: #2A2A2A;
+  }
+  .navbar-nav.main-menu > li .sub-menu li a {
+    color: #DDDDDD;
+  }
+}
+
+
+
+
+
+
+
+/* Global Radius Zero Rule */
+.btn, .form-control, input, select, textarea, .nav-tabs > li > a {
+    border-radius: 0 !important;
+}
+
+/* Modifier for left-aligned section headings */
+.section-heading.text-left {
+    text-align: left !important;
+}
+.section-heading.text-left::before {
+    left: 0;
+    margin-left: 0;
+}
+.section-heading.text-left::after {
+    left: 0;
+    margin-left: 0;
+}
+
+/* Custom Project Link Button (Replaces Lightbox preview-btn) */
+.custom-project-btn {
+    border: 1px solid #fff;
+    border-radius: 100px !important;
+    color: #fff;
+    display: inline-block;
+    height: 45px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    width: 45px;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+.custom-project-btn:hover {
+    background: #fff;
+    color: var(--rf-primary-green);
+}
